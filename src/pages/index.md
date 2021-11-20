@@ -1,12 +1,11 @@
 ---
 templateKey: index-page
-title: 株式会社鹿児島美掃
-image: /img/入口_右前方_斜め.jpg
-heading: 株式会社鹿児島美掃
-subheading: Kagoshima Biso 
+title: 地域の皆さんに寄り添い、鹿児島をクリーンにしたい
+image: /img/ブルドーザー他.jpg
+heading: 腹へった
+subheading: For our town, to Clean Kagoshima
 mainpitch:
   title: なぜ俺らか?
-  # image: /img/S__79978523.jpg
   description: >
     Kaldi is the coffee store for everyone who believes that great coffee
     shouldn't just taste good, it should do good too. We source all of our beans
