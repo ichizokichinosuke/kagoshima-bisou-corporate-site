@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
-import github from "../img/github-icon.svg";
-// import logo from "../img/logo.svg";
 import logo from "../img/logo_02.png";
+import logoName from "../img/logo_company_name.png"
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -36,7 +35,7 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-transparent"
+        className="navbar is-transparent is-fixed-top"
         role="navigation"
         aria-label="main-navigation"
       >
@@ -45,6 +44,7 @@ const Navbar = class extends React.Component {
             <Link to="/" className="navbar-item" title="Logo">
               {/* <img src={logo} alt="Kaldi" style={{ width: "88px" }} /> */}
               <img src={logo} alt="Kaldi" />
+              <img src={logoName} alt="Company Name" />
 
             </Link>
             {/* Hamburger menu */}
@@ -83,16 +83,16 @@ const Navbar = class extends React.Component {
               </Link>
             </div>
             <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
+              <div class="navbar-item">
+                <div class="field has-addons">
+                  <div class="control">
+                    <input class="input" type="text" name="search" placeholder="keyword search" />
+                  </div>
+                  <div class="control">
+                    <a class="button is-info"><i class="fa fa-search"></i>検索</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
