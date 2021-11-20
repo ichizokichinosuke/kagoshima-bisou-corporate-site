@@ -2,30 +2,70 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
+import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+
 
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import FullWidthImage from "../components/FullWidthImage";
 
 // eslint-disable-next-line
-export const AboutPageTemplate = ({ image, title, content, contentComponent }) => {
+export const AboutPageTemplate = ({ 
+  image,
+  title,
+  subheading,
+  content,
+  contentComponent 
+}) => {
   const heroImage = getImage(image) || image;
   const PageContent = contentComponent || Content;
 
+  const containerStyle = {
+    width: "100vh",
+    height: "50vh",
+  }
+  
+  
+  const positionCompany = {
+    lat: 31.604830736123052,
+    lng: 130.5064537850215,
+  };
+  
+  const markerLabelCompany = {
+    color: "white",
+    fontFamily: "sans-serif",
+    fontSize: "15px",
+    fontWeight: "100",
+    // text: "鹿児島美掃",
+  };
+  
+
   return (
     <div>
-      <FullWidthImage img={heroImage} title={title} />
+      <FullWidthImage img={heroImage} title={title} subheading={subheading}/>
       <section className="section section--gradient">
         <div className="container">
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="section">
-                <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+                {/* <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                   {title}
-                </h2>
+                </h2> */}
                 <PageContent className="content" content={content} />
+                <LoadScript googleMapsApiKey="AIzaSyBW4uuvOUlsazFLqdoShtn4-w6e6xwGc_g">
+                <GoogleMap 
+                  mapContainerStyle={containerStyle}
+                  center={positionCompany}
+                  zoom={17}
+                >
+                  <Marker position={positionCompany} label={markerLabelCompany}/>
+                </GoogleMap>
+              </LoadScript>
               </div>
             </div>
+            {/* <div className="column is-10 is-offset-1"> */}
+              
+            {/* </div> */}
           </div>
         </div>
       </section>
@@ -48,6 +88,7 @@ const AboutPage = ({ data }) => {
         contentComponent={HTMLContent}
         image={post.frontmatter.image}
         title={post.frontmatter.title}
+        subheading={post.frontmatter.subheading}
         content={post.html}
       />
     </Layout>
@@ -66,6 +107,7 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
+        subheading
         image {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: FULL_WIDTH)
