@@ -1,24 +1,43 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-import logo from "../img/logo.svg";
 import facebook from "../img/social/facebook.svg";
 import instagram from "../img/social/instagram.svg";
 import twitter from "../img/social/twitter.svg";
 import vimeo from "../img/social/vimeo.svg";
+import logo from "../img/logo_02.png";
+import logoName from "../img/logo_company_name.png"
+
 
 const Footer = class extends React.Component {
   render() {
     return (
       <footer className="footer has-background-black has-text-white-ter">
         <div className="content has-text-centered">
-          <img
-            src={logo}
-            alt="Kaldi"
-            style={{ width: "14em", height: "10em" }}
-          />
+          <div className="columns">
+            <div className="column">
+              <h3>お見積り・お問い合わせ</h3>
+              私たちはいろいろやってます。Come on!
+              {/* <img
+                src={logo}
+                alt="logo"
+                style={{ width: "5%", height: "auto" }}
+              /> */}
+            </div>
+            <div className="column">
+              <Link to="/contact/examples">
+                <button className="button is-success is-outlined is-rounded">お問い合わせ</button>
+              </Link>
+
+              {/* <img
+                src={logoName}
+                alt="logo name"
+                style={{ width: "5%", height: "auto" }}
+              /> */}
+            </div>
+          </div>
         </div>
-        <div className="content has-text-centered has-background-black has-text-white-ter">
+        <div className="content has-text-centered has-background-red has-text-white-ter">
           <div className="container has-background-black has-text-white-ter">
             <div style={{ maxWidth: "100vw" }} className="columns">
               <div className="column is-4">
@@ -31,17 +50,17 @@ const Footer = class extends React.Component {
                     </li>
                     <li>
                       <Link className="navbar-item" to="/about">
-                        About
+                        会社情報
                       </Link>
                     </li>
                     <li>
                       <Link className="navbar-item" to="/products">
-                        Products
+                        事業案内
                       </Link>
                     </li>
                     <li>
                       <Link className="navbar-item" to="/contact/examples">
-                        Form Examples
+                        お取引先の方へ
                       </Link>
                     </li>
                     <li>
@@ -67,7 +86,7 @@ const Footer = class extends React.Component {
                     </li>
                     <li>
                       <Link className="navbar-item" to="/contact">
-                        Contact
+                        お問い合わせ
                       </Link>
                     </li>
                   </ul>
