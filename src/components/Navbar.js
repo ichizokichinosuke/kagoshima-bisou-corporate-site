@@ -35,17 +35,23 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-transparent is-fixed-top"
+        className="navbar is-transparent is-fixed-top has-shadow"
         role="navigation"
         aria-label="main-navigation"
-        style={{height: "5em"}}
       >
-        <div className="container ">
+        {/* <div className="box" > */}
+        <div className="container">
+          {/* <div className="navbar-brand has-background-primary "> */}
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              {/* <img src={logo} alt="Kaldi" style={{ width: "88px" , height:}} /> */}
-              <img src={logo} alt="logo img" />
-              <img src={logoName} alt="Company Name" />
+              <span className="icon is-large" style={{ height: "10em" ,width: "10em"}}>
+                <img className="image is-128x128px" src={logo} alt="logo img" style={{ width: "8em" }}/>
+                {/* <i className="fas fa-home fa-2x" style={{ height: "5em" ,width: "5em"}}></i> */}
+              </span>
+              {/* <img src={logo} alt="logo img" /> */}
+            </Link>
+            <Link to="/" className="navbar-item" title="Logo name">
+              <img className="image" src={logoName} alt="Company Name" style={{ width: "10em" }} />
             </Link>
             {/* Hamburger menu */}
             <div
@@ -95,7 +101,8 @@ const Navbar = class extends React.Component {
               </div>
             </div>
           </div>
-        </div>
+          </div>
+        {/* </div> */}
       </nav>
     );
   }
