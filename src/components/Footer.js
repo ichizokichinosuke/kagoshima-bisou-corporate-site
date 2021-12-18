@@ -6,18 +6,20 @@ import instagram from "../img/social/instagram.svg";
 import twitter from "../img/social/twitter.svg";
 import vimeo from "../img/social/vimeo.svg";
 import logo from "../img/logo_02.png";
-import logoName from "../img/logo_company_name.png"
+import logoName from "../img/logo_company_name.png";
 
 
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="footer has-background-black has-text-white-ter">
+      <footer className="footer has-background-primary has-text-white-ter">
         <div className="content has-text-centered">
           <div className="columns">
             <div className="column">
               <h3>お見積り・お問い合わせ</h3>
-              私たちはいろいろやってます。Come on!
+              <p>廃棄物処理・リサイクル品の集荷・営業などを行なっています。</p>
+              <p>お気軽にお問い合わせください！</p>
+
               {/* <img
                 src={logo}
                 alt="logo"
@@ -26,7 +28,7 @@ const Footer = class extends React.Component {
             </div>
             <div className="column">
               <Link to="/contact/examples">
-                <button className="button is-success is-outlined is-rounded">お問い合わせ</button>
+                <button className="button is-success is-outlined is-rounded is-large">お問い合わせ</button>
               </Link>
 
               {/* <img
@@ -37,7 +39,7 @@ const Footer = class extends React.Component {
             </div>
           </div>
         </div>
-        <div className="content has-text-centered has-background-red has-text-white-ter">
+        <div className="content has-text-centered has-background-black has-text-white-ter">
           <div className="container has-background-black has-text-white-ter">
             <div style={{ maxWidth: "100vw" }} className="columns">
               <div className="column is-4">
