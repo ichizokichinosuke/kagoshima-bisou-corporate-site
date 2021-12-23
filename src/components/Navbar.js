@@ -44,15 +44,16 @@ const Navbar = class extends React.Component {
           {/* <div className="navbar-brand has-background-primary "> */}
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <span className="icon is-large" style={{ height: "10em" ,width: "10em"}}>
-                <img className="image is-128x128px" src={logo} alt="logo img" style={{ width: "8em" }}/>
+              {/* <span className="icon is-large" style={{ height: "10em" ,width: "10em"}}> */}
+                <img className="image is-128x128px" src={logo} alt="logo img"/>
+                <img className="image" src={logoName} alt="Company Name" />
                 {/* <i className="fas fa-home fa-2x" style={{ height: "5em" ,width: "5em"}}></i> */}
-              </span>
+              {/* </span> */}
               {/* <img src={logo} alt="logo img" /> */}
             </Link>
-            <Link to="/" className="navbar-item" title="Logo name">
-              <img className="image" src={logoName} alt="Company Name" style={{ width: "10em" }} />
-            </Link>
+            {/* <Link to="/" className="navbar-item" title="Logo name"> */}
+              {/* <img className="image" src={logoName} alt="Company Name" style={{ width: "10em" }} /> */}
+            {/* </Link> */}
             {/* Hamburger menu */}
             <div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}

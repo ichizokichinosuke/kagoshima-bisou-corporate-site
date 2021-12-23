@@ -12,8 +12,9 @@ import logoName from "../img/logo_company_name.png";
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="footer has-background-primary has-text-white-ter">
-        <div className="content has-text-centered">
+      // <footer className="footer has-background-primary has-text-white-ter">
+      <footer className="footer has-background-success-light">
+        <div className="content has-text-centered has-text-black-ter">
           <div className="columns">
             <div className="column">
               <h3>お見積り・お問い合わせ</h3>
@@ -39,8 +40,8 @@ const Footer = class extends React.Component {
             </div>
           </div>
         </div>
-        <div className="content has-text-centered has-background-black has-text-white-ter">
-          <div className="container has-background-black has-text-white-ter">
+        <div className="content has-text-centered has-background-success-light has-text-black-ter">
+          <div className="container">
             <div style={{ maxWidth: "100vw" }} className="columns">
               <div className="column is-4">
                 <section className="menu">
