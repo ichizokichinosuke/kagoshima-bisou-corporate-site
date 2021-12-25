@@ -25,7 +25,6 @@ export const AboutPageTemplate = ({
     height: "50vh",
   }
 
-
   const positionCompany = {
     lat: 31.604830736123052,
     lng: 130.5064537850215,
@@ -48,6 +47,16 @@ export const AboutPageTemplate = ({
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="section">
+                {/* <h3 className="title">会社概要</h3> */}
+                {/* <article className="message is-large is-info">
+                  <div className="message-header">
+                    <p>会社概要</p>
+                  </div>
+                  <div className="message-body is-black">
+                    <p>社名: 鹿児島美掃</p>
+                    <p>所在地: 〒890-0022 鹿児島県鹿児島市小野町3263番地</p>
+                  </div>
+                </article> */}
                 {/* <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                   {title}
                 </h2> */}

@@ -3,92 +3,64 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
-import Features from "../components/Features";
-import Testimonials from "../components/Testimonials";
-import Pricing from "../components/Pricing";
-import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
+// import Features from "../components/Features";
+// import Testimonials from "../components/Testimonials";
+// import Pricing from "../components/Pricing";
+// import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 import FullWidthImage from "../components/FullWidthImage";
 
 // eslint-disable-next-line
-export const ProductPageTemplate = ({
+export const BusinessPageTemplate = ({
   image,
   title,
   heading,
+  subheading,
   description,
-  intro,
-  main,
-  testimonials,
+  fullImageInterimProcess,
+  // intro,
+  // main,
+  // testimonials,
   fullImage,
   pricing,
 }) => {
   const heroImage = getImage(image) || image;
+  const fwiInterimProcess = getImage(fullImageInterimProcess) || fullImageInterimProcess;
   const fullWidthImage = getImage(fullImage) || fullImage;
+  const fwiCar = getImage(pricing.image) || pricing.image;
 
   return (
     <div className="content">
-      <FullWidthImage img={heroImage} title={title} />
-      <section className="section section--gradient">
+      <FullWidthImage img={heroImage} title={title} subheading={subheading}/>
+      <section className="section section--gradient pb-0">
         <div className="container">
           <div className="section">
             <div className="columns">
-              <div className="column is-7 is-offset-1">
+              <div className="column is-10 is-offset-1">
                 <h3 className="has-text-weight-semibold is-size-2">
                   {heading}
                 </h3>
-                <p>{description}</p>
+                <p className="is-size-5">{description}</p>
               </div>
             </div>
-            <div className="columns">
-              <div className="column is-10 is-offset-1">
-                <Features gridItems={intro.blurbs} /> 
-                <div className="columns">
-                  <div className="column is-7">
-                    <h3 className="has-text-weight-semibold is-size-3">
-                      {main.heading}
-                    </h3>
-                    <p>{main.description}</p>
-                  </div>
-                </div>
-                <div className="tile is-ancestor">
-                  <div className="tile is-vertical">
-                    <div className="tile">
-                      <div className="tile is-parent is-vertical">
-                        <article className="tile is-child">
-                          <PreviewCompatibleImage imageInfo={main.image1} />
-                        </article>
-                      </div>
-                      <div className="tile is-parent">
-                        <article className="tile is-child">
-                          <PreviewCompatibleImage imageInfo={main.image2} />
-                        </article>
-                      </div>
-                    </div>
-                    <div className="tile is-parent">
-                      <article className="tile is-child">
-                        <PreviewCompatibleImage imageInfo={main.image3} />
-                      </article>
-                    </div>
-                  </div>
-                </div>
-                <Testimonials testimonials={testimonials} />
-              </div>
-            </div>
+            <FullWidthImage img={fwiInterimProcess} />
+            {/* </div> */}
           </div>
         </div>
       </section>
-      <FullWidthImage img={fullWidthImage} imgPosition={"bottom"} />
-      <section className="section section--gradient">
+      {/* <FullWidthImage img={fullWidthImage} imgPosition={"bottom"} /> */}
+      <section className="section section--gradient pt-0">
         <div className="container">
           <div className="section">
             <div className="columns">
               <div className="column is-10 is-offset-1">
-                <h2 className="has-text-weight-semibold is-size-2">
+                <h3 className="has-text-weight-semibold is-size-2">
                   {pricing.heading}
-                </h2>
+                </h3>
                 <p className="is-size-5">{pricing.description}</p>
-                <Pricing data={pricing.plans} />
+                {/* <Pricing data={pricing.plans} /> */}
               </div>
             </div>
+            <FullWidthImage img={fwiCar} />
           </div>
         </div>
       </section>
@@ -96,11 +68,12 @@ export const ProductPageTemplate = ({
   );
 };
 
-ProductPageTemplate.propTypes = {
+BusinessPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
   description: PropTypes.string,
+  fullImageInterimProcess: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
@@ -116,20 +89,23 @@ ProductPageTemplate.propTypes = {
   pricing: PropTypes.shape({
     heading: PropTypes.string,
     description: PropTypes.string,
-    plans: PropTypes.array,
+    image: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
+    // plans: PropTypes.array,
   }),
 };
 
-const ProductPage = ({ data }) => {
+const BusinessPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
     <Layout>
-      <ProductPageTemplate
+      <BusinessPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}
+        subheading={frontmatter.subheading}
         description={frontmatter.description}
+        fullImageInterimProcess={frontmatter.full_image_interim_process}
         intro={frontmatter.intro}
         main={frontmatter.main}
         testimonials={frontmatter.testimonials}
@@ -140,7 +116,7 @@ const ProductPage = ({ data }) => {
   );
 };
 
-ProductPage.propTypes = {
+BusinessPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -148,10 +124,10 @@ ProductPage.propTypes = {
   }),
 };
 
-export default ProductPage;
+export default BusinessPage;
 
-export const productPageQuery = graphql`
-  query ProductPage($id: String!) {
+export const businessPageQuery = graphql`
+  query BusinessPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
@@ -161,7 +137,13 @@ export const productPageQuery = graphql`
           }
         }
         heading
+        subheading
         description
+        full_image_interim_process {
+          childImageSharp {
+            gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+          }
+        }
         intro {
           blurbs {
             image {
@@ -206,7 +188,6 @@ export const productPageQuery = graphql`
           author
           quote
         }
-
         full_image {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: FULL_WIDTH)
@@ -214,13 +195,12 @@ export const productPageQuery = graphql`
         }
         pricing {
           heading
-          description
-          plans {
-            description
-            items
-            plan
-            price
+          image {
+            childImageSharp {
+              gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+            }
           }
+          description
         }
       }
     }

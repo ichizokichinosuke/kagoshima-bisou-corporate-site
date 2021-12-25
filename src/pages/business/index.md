@@ -1,14 +1,13 @@
 ---
-templateKey: 'product-page'
-path: /products
-title: Our Coffee
-image: /img/jumbotron.jpg
-heading: Great coffee with a conscience
+templateKey: 'business-page'
+path: /business
+title: 事業案内
+image: /img/貨物赤.jpg
+heading: 中間処理場（砕石施設）
+subheading: Service information
 description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  がれきや木クズの破砕だけでなく、資源リサイクルにも力を入れ、環境に配慮した事業にも積極的に取り組んでいます。
+full_image_interim_process: /img/貨物.jpg
 intro:
   blurbs:
     - image: /img/coffee.png
@@ -69,33 +68,33 @@ testimonials:
     quote: >-
       Kaldi is the place to go if you want the best quality coffee. I love their
       stance on empowering farmers and transparency.
-full_image: /img/products-full-width.jpg
+full_image: /img/貨物.jpg
 pricing:
-  heading: Monthly subscriptions
+  heading: 産業廃棄物収集運搬業
+  image: /img/ブルドーザー他.jpg
   description: >-
-    We make it easy to make great coffee a part of your life. Choose one of our
-    monthly subscription plans to receive great coffee at your doorstep each
-    month. Contact us about more details and payment info.
-  plans:
-    - description: Perfect for the drinker who likes to enjoy 1-2 cups per day.
-      items:
-        - 3 lbs of coffee per month
-        - Green or roasted beans"
-        - One or two varieties of beans"
-      plan: Small
-      price: '50'
-    - description: 'Great for avid drinkers, java-loving couples and bigger crowds'
-      items:
-        - 6 lbs of coffee per month
-        - Green or roasted beans
-        - Up to 4 different varieties of beans
-      plan: Big
-      price: '80'
-    - description: Want a few tiny batches from different varieties? Try our custom plan
-      items:
-        - Whatever you need
-        - Green or roasted beans
-        - Unlimited varieties
-      plan: Custom
-      price: '??'
+    要求に応じた運搬を安全、迅速、確実に執り行います。
+    鹿児島美掃は、解体作業により必ず生じる産業廃棄物をより早くより安全により確実に行います。
+  # plans:
+  #   - description: Perfect for the drinker who likes to enjoy 1-2 cups per day.
+  #     items:
+  #       - 3 lbs of coffee per month
+  #       - Green or roasted beans"
+  #       - One or two varieties of beans"
+  #     plan: Small
+  #     price: '50'
+  #   - description: 'Great for avid drinkers, java-loving couples and bigger crowds'
+  #     items:
+  #       - 6 lbs of coffee per month
+  #       - Green or roasted beans
+  #       - Up to 4 different varieties of beans
+  #     plan: Big
+  #     price: '80'
+  #   - description: Want a few tiny batches from different varieties? Try our custom plan
+  #     items:
+  #       - Whatever you need
+  #       - Green or roasted beans
+  #       - Unlimited varieties
+  #     plan: Custom
+  #     price: '??'
 ---

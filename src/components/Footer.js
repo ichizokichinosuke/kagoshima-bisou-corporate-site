@@ -25,7 +25,7 @@ const Footer = class extends React.Component {
               <img
                 src={logo}
                 alt="logo"
-                // style={{ width: "auto", height: "8rem" }}
+                style={{ width: "auto", height: "5rem" }}
               />
             </div>
             {/* <div className="column is-one-fifths is-offset-second-fifth">
