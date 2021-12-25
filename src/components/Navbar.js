@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
-import logo from "../img/logo_02.png";
-import logoName from "../img/logo_company_name.png"
+// import logo from "../img/logo_transparent.png";
+import logo from "../img/logo_concat_3.png";
+import logoName from "../img/logo_company_name_transparent.png"
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -46,7 +47,7 @@ const Navbar = class extends React.Component {
             <Link to="/" className="navbar-item" title="Logo">
               {/* <span className="icon is-large" style={{ height: "10em" ,width: "10em"}}> */}
                 <img className="image is-128x128px" src={logo} alt="logo img"/>
-                <img className="image" src={logoName} alt="Company Name" />
+                {/* <img className="image" src={logoName} alt="Company Name" /> */}
                 {/* <i className="fas fa-home fa-2x" style={{ height: "5em" ,width: "5em"}}></i> */}
               {/* </span> */}
               {/* <img src={logo} alt="logo img" /> */}
