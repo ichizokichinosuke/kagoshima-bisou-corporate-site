@@ -127,7 +127,7 @@ BusinessPage.propTypes = {
 export default BusinessPage;
 
 export const businessPageQuery = graphql`
-  query BusinessPage($id: String!) {
+  query  ($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title

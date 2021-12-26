@@ -80,7 +80,7 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/business">
                 事業案内
               </Link>
-              <Link className="navbar-item" to="/blog">
+              <Link className="navbar-item" to="/certification">
                 お取引先の方へ
               </Link>
               <Link className="navbar-item" to="/contact">
