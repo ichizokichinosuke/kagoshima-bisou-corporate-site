@@ -21,7 +21,8 @@ export const CertPageTemplate = ({
     const PageContent = contentComponent || Content;
     const syobunImage = "../img/処分許可証.png";
     const syuunImage = "../img/県収集運搬.png";
-    const vehicleImage = "../img/vehicle.jpg"
+    const vehicleImage = "../img/vehicle.jpg";
+    const facilityImage = "../img/facility.jpg";
     const imageHeight = 250;
     // const imageWidth = "2rem";
 
@@ -36,10 +37,10 @@ export const CertPageTemplate = ({
                                 <h1 className="title is-2">許可証</h1>
                                 {/* <div className="block"></div> */}
                                 <h2 className="title is-3">産業廃棄物処分業許可</h2>
+                                <h3 className="title is-4">施設概要</h3>
                                 <div className="columns">
                                     <div className="column">
                                         <div className="content">
-                                        <h3 className="title is-4">施設概要</h3>
                                         <table className="table is-hoverable is-bordered has-text-centered">
                                             <thead>
                                                 <tr>
@@ -78,17 +79,23 @@ export const CertPageTemplate = ({
                                     </div>
                                 </div>
                                 <h2 className="title is-3">産業廃棄物収集運搬業許可</h2>
+                                <h3 className="title is-4">保有車両</h3>
                                 <div className="columns">
                                     <div className="column">
-                                        <h3 className="title is-4">使用車両</h3>
-                                        <StaticImage
-                                            src={vehicleImage}
-                                            aspectRatio={3/1}
+                                        <div className="content">
+                                            <StaticImage
+                                                src={vehicleImage}
+                                                aspectRatio={3/2}
+                                                objectPosition={"center"}
+                                                layout="fullWidth"
+                                                style={{
+                                                    gridArea: "1/1",
+                                                    maxHeight: 400,
+                                                }}
+                                                // transformOptions={{cropFocus: "attention"}}
 
-                                            layout="fullWidth"
-                                            // transformOptions={{cropFocus: "attention"}}
-
-                                        />
+                                            />
+                                        </div>
 
                                     </div>
                                     <div className="column is-3">
@@ -100,11 +107,25 @@ export const CertPageTemplate = ({
                                     </div>
                                 </div>
                                 <h2 className="title is-3">かごしま認定リサイクル製品認定証</h2>
+                                <h3 className="title is-4">設備</h3>
                                 <div className="columns">
                                     <div className="column">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        <div className="content">
+                                            <StaticImage
+                                                src={facilityImage}
+                                                aspectRatio={3/2}
+                                                objectPosition={"center"}
+                                                layout="fullWidth"
+                                                style={{
+                                                    gridArea: "1/1",
+                                                    maxHeight: 400,
+                                                }}
+                                                // transformOptions={{cropFocus: "attention"}}
+                                            />
+                                        </div>
+
                                     </div>
-                                    <div className="column is-4">
+                                    <div className="column is-3">
                                         {/* test */}
                                         {/* {syobunkyokaImageVar} */}
                                         {/* <FullWidthImage img={syobunkyokaImageVar} /> */}
@@ -114,7 +135,7 @@ export const CertPageTemplate = ({
                                 </div>
                                 <h1 className="title is-2">電子マニフェスト（JWネット、Eリバース）</h1>
                                 <h2 className="title is-3">産業廃棄物処分業</h2>
-                                <table className="table is-hoverable has-text-centered">
+                                <table className="table is-hoverable is-bordered has-text-centered">
                                     {/* <thead>
                                         <tr>
                                             <th>加入者番号</th>
