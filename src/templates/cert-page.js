@@ -8,7 +8,6 @@ import Content, { HTMLContent } from "../components/Content";
 import FullWidthImage from "../components/FullWidthImage";
 // import syobunImage from "../img/処分許可証.png";
 
-
 export const CertPageTemplate = ({
     image,
     title,
@@ -22,6 +21,7 @@ export const CertPageTemplate = ({
     const PageContent = contentComponent || Content;
     const syobunImage = "../img/処分許可証.png";
     const syuunImage = "../img/県収集運搬.png";
+    const vehicleImage = "../img/vehicle.jpg"
     const imageHeight = 250;
     // const imageWidth = "2rem";
 
@@ -38,9 +38,38 @@ export const CertPageTemplate = ({
                                 <h2 className="title is-3">産業廃棄物処分業許可</h2>
                                 <div className="columns">
                                     <div className="column">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        <div className="content">
+                                        <h3 className="title is-4">施設概要</h3>
+                                        <table className="table is-hoverable is-bordered has-text-centered">
+                                            <thead>
+                                                <tr>
+                                                    <th>破砕施設</th>
+                                                    <th>処理能力</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                <tr>
+                                                    <th>木くず</th>
+                                                    <td>3.5t/日</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>廃プラスチック類</th>
+                                                    <td>0.79t/日</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>ガラス、コンクリート、陶磁器、紙くず</th>
+                                                    <td>4.8t/日</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>がれき類、ガラス、コンクリート、陶磁器くず</th>
+                                                    <td>288t/日</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        </div>
                                     </div>
-                                    <div className="column is-4">
+                                    <div className="column is-3">
                                         {/* test */}
                                         {/* {syobunkyokaImageVar} */}
                                         {/* <FullWidthImage img={syobunkyokaImageVar} /> */}
@@ -51,9 +80,18 @@ export const CertPageTemplate = ({
                                 <h2 className="title is-3">産業廃棄物収集運搬業許可</h2>
                                 <div className="columns">
                                     <div className="column">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        <h3 className="title is-4">使用車両</h3>
+                                        <StaticImage
+                                            src={vehicleImage}
+                                            aspectRatio={3/1}
+
+                                            layout="fullWidth"
+                                            // transformOptions={{cropFocus: "attention"}}
+
+                                        />
+
                                     </div>
-                                    <div className="column is-4">
+                                    <div className="column is-3">
                                         {/* test */}
                                         {/* {syobunkyokaImageVar} */}
                                         {/* <FullWidthImage img={syobunkyokaImageVar} /> */}
@@ -74,6 +112,41 @@ export const CertPageTemplate = ({
                                         {/* <img src={syobunImage} /> */}
                                     </div>
                                 </div>
+                                <h1 className="title is-2">電子マニフェスト（JWネット、Eリバース）</h1>
+                                <h2 className="title is-3">産業廃棄物処分業</h2>
+                                <table className="table is-hoverable has-text-centered">
+                                    {/* <thead>
+                                        <tr>
+                                            <th>加入者番号</th>
+                                            <th>公開確認番号</th>
+                                        </tr>
+                                    </thead> */}
+                                    <tbody>
+                                        <tr>
+                                            <th>加入者番号</th>
+                                            <td>3017062</td>
+                                        </tr>
+                                        <tr>
+                                            <th>公開確認番号</th>
+                                            <td>708015</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h2 className="title is-3">産業廃棄物収集運搬業</h2>
+                                <table className="table is-hoverable is-bordered has-text-centered">
+                                    <thead>
+                                        <tr>
+                                            <th>加入者番号</th>
+                                            <th>公開確認番号</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2028277</td>
+                                            <td>766204</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                                 {/* <PageContent className="content" content={content} /> */}
                             </div>
                         </div>
