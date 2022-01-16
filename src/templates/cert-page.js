@@ -24,6 +24,7 @@ export const CertPageTemplate = ({
   const certResycleImage = "../img/certi_resycle.jpeg";
   const vehicleImage = "../img/vehicle.jpg";
   const facilityImage = "../img/facility.jpg";
+
   const imageHeight = 250;
   // const imageWidth = "2rem";
 
@@ -70,7 +71,7 @@ export const CertPageTemplate = ({
                         </tbody>
                       </table>
                       {/* <p>詳細</p> */}
-                      <Link to="/">詳細</Link>
+                      <Link to="./facility_detail">詳細</Link>
                     </div>
                   </div>
                   <div className="column is-3">
