@@ -6,7 +6,6 @@ import { getImage, StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import FullWidthImage from "../components/FullWidthImage";
-// import syobunImage from "../img/処分許可証.png";
 
 export const CertPageTemplate = ({
   image,
@@ -53,19 +52,19 @@ export const CertPageTemplate = ({
 
                         <tbody>
                           <tr>
-                            <th>木くず</th>
+                            <th>1. 木くず</th>
                             <td>3.5t/日</td>
                           </tr>
                           <tr>
-                            <th>廃プラスチック類</th>
+                            <th>2. 廃プラスチック類</th>
                             <td>0.79t/日</td>
                           </tr>
                           <tr>
-                            <th>ガラス、コンクリート、陶磁器、紙くず</th>
+                            <th>3. ガラス、コンクリート、陶磁器、紙くず</th>
                             <td>4.8t/日</td>
                           </tr>
                           <tr>
-                            <th>がれき類、ガラス、コンクリート、陶磁器くず</th>
+                            <th>4. がれき類、ガラス、コンクリート、陶磁器くず</th>
                             <td>288t/日</td>
                           </tr>
                         </tbody>

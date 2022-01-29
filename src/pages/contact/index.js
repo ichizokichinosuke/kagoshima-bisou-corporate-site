@@ -39,7 +39,7 @@ export default class Index extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
-              <h1>Contact</h1>
+              <h1>お問い合わせ</h1>
               <form
                 name="contact"
                 method="post"
@@ -58,7 +58,7 @@ export default class Index extends React.Component {
                 </div>
                 <div className="field">
                   <label className="label" htmlFor={"name"}>
-                    Your name
+                    お名前
                   </label>
                   <div className="control">
                     <input
@@ -73,7 +73,7 @@ export default class Index extends React.Component {
                 </div>
                 <div className="field">
                   <label className="label" htmlFor={"email"}>
-                    Email
+                    メールアドレス
                   </label>
                   <div className="control">
                     <input
@@ -87,8 +87,23 @@ export default class Index extends React.Component {
                   </div>
                 </div>
                 <div className="field">
+                  <label className="label" htmlFor={"phone"}>
+                    電話番号
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={"phone"}
+                      name={"phone"}
+                      onChange={this.handleChange}
+                      id={"phone"}
+                      required={false}
+                    />
+                  </div>
+                </div>
+                <div className="field">
                   <label className="label" htmlFor={"message"}>
-                    Message
+                    お問い合わせ内容
                   </label>
                   <div className="control">
                     <textarea
@@ -102,7 +117,7 @@ export default class Index extends React.Component {
                 </div>
                 <div className="field">
                   <button className="button is-link" type="submit">
-                    Send
+                    送信
                   </button>
                 </div>
               </form>
