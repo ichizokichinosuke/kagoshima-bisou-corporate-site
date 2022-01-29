@@ -10,6 +10,7 @@ export default function FullWidthImage(props) {
     subheading,
     imgPosition = "center",
   } = props;
+  // const shadowColor= "#5c8d89";
 
   return (
     <React.Fragment>
@@ -46,6 +47,7 @@ export default function FullWidthImage(props) {
               gridArea: "1/1",
               // You can set a maximum height for the image, if you wish.
               maxHeight: height,
+              filter: "brightness(60%)",
             }}
             layout="fullWidth"
             // You can optionally force an aspect ratio for the generated image
@@ -71,10 +73,10 @@ export default function FullWidthImage(props) {
               <h1
                 className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
                 style={{
-                  boxShadow:
-                    "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
-                  // backgroundColor: "rgb(255, 68, 0)",
-                  backgroundColor: "hsl(171, 100%, 10%)",
+                  // boxShadow:
+                    // "#5c8d89 0.5rem 0px 0px, #5c8d89 -0.5rem 0px 0px",
+                  // backgroundColor: "#5c8d89",
+                  // backgroundColor: "#5c8d89",
                   color: "white",
                   lineHeight: "1",
                   padding: "0.25em",
@@ -87,9 +89,9 @@ export default function FullWidthImage(props) {
               <h3
                 className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
                 style={{
-                  boxShadow:
-                    "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
-                  backgroundColor: "hsl(171, 100%, 38%)",
+                  // boxShadow:
+                  //   "#5c8d89 0.5rem 0px 0px, #5c8d89 -0.5rem 0px 0px",
+                  // backgroundColor: "#5c8d89",
                   color: "white",
                   lineHeight: "1",
                   padding: "0.25rem",

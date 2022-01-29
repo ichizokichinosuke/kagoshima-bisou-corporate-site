@@ -1,16 +1,13 @@
 ---
 templateKey: index-page
-title: 地域の皆さんに寄り添い、鹿児島をクリーンにしたい
-image: /img/ブルドーザー他.jpg
+title: 株式会社 鹿児島美掃
+image: /img/up.jpg
 heading: 腹へった
-subheading: For our town, to Clean Kagoshima
+subheading: Kagoshima Biso
 mainpitch:
-  title: なぜ俺らか?
+  title: ごあいさつ
   description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    私たちは、廃棄物を取り扱う会社です。廃棄物には、皆さまの日常生活で排出されるものや、企業等の事業活動で排出されるものなど、様々な種類があります。毎年、鹿児島県では約900万トンもの廃棄物が排出されていますが、たくさんの同業の仲間たちによってキレイで安全な街が維持されています。私たちが目指すのも、その維持への貢献です。そしてさらに質の良いサービスによって、より良い社会、持続可能な社会を作り続けていくことです。地域社会と共存しながら、鹿児島美掃はスタッフ全員で真正面から取り組んでまいります。
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
