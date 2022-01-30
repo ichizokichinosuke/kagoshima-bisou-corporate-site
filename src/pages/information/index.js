@@ -2,15 +2,18 @@ import * as React from "react";
 
 import Layout from "../../components/Layout";
 import BlogRoll from "../../components/BlogRoll";
+import FullWidthImage from "../../components/FullWidthImage";
+import birdViewImage from "../../img/bird-view.jpg";
 
 export default class BlogIndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <div
+        <FullWidthImage img={birdViewImage} />
+        {/* <div
           className="full-width-image-container margin-top-0"
           style={{
-            backgroundImage: `url('/img/blog-index.jpg')`,
+            backgroundImage: `url('/img/bird-view.jpg')`,
           }}
         >
           <h1
@@ -24,7 +27,7 @@ export default class BlogIndexPage extends React.Component {
           >
             Latest Stories
           </h1>
-        </div>
+        </div> */}
         <section className="section">
           <div className="container">
             <div className="content">

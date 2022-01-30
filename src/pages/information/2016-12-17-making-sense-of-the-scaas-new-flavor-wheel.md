@@ -1,5 +1,5 @@
 ---
-templateKey: blog-post
+templateKey: information-post
 title: Making sense of the SCAA’s new Flavor Wheel
 date: 2020-12-17T15:04:10.000Z
 featuredpost: true
