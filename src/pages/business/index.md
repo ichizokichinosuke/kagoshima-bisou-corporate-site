@@ -2,11 +2,12 @@
 templateKey: 'business-page'
 path: /business
 title: 事業案内
-image: /img/excavaor-car.jpg
+image: /img/excavator-car.jpg
 heading: 中間処理場（砕石施設）
 subheading: Service information
 description: >-
-  がれきや木クズの破砕だけでなく、資源リサイクルにも力を入れ、環境に配慮した事業にも積極的に取り組んでいます。
+  事業活動を行う際に必ず生じるゴミの中間処理を行います。
+  がれきや木クズ等、あらゆるゴミの破砕に対応しているだけでなく、環境に配慮した資源リサイクルにも力を入れて取り組んでいます。
 full_image_interim_process: /img/facility.jpg
 intro:
   blurbs:
@@ -71,10 +72,9 @@ testimonials:
 full_image: /img/貨物.jpg
 pricing:
   heading: 産業廃棄物収集運搬業
-  image: /img/ブルドーザー他.jpg
+  image: /img/vehicle.jpg
   description: >-
     要求に応じた運搬を安全、迅速、確実に執り行います。
-    鹿児島美掃は、解体作業により必ず生じる産業廃棄物をより早くより安全により確実に行います。
   # plans:
   #   - description: Perfect for the drinker who likes to enjoy 1-2 cups per day.
   #     items:

@@ -1,6 +1,7 @@
 import * as React from "react";
 import { navigate } from "gatsby-link";
 import Layout from "../../components/Layout";
+import FullWidthImage from "../../components/FullWidthImage";
 
 function encode(data) {
   return Object.keys(data)
@@ -32,14 +33,15 @@ export default class Index extends React.Component {
       .then(() => navigate(form.getAttribute("action")))
       .catch((error) => alert(error));
   };
-
   render() {
     return (
       <Layout>
+        {/* <FullWidthImage img={}  */}
         <section className="section">
           <div className="container">
             <div className="content">
               <h1>お問い合わせ</h1>
+              <p>ぜひお気軽にお問い合わせください。</p>
               <form
                 name="contact"
                 method="post"

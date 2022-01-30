@@ -77,6 +77,10 @@ export const AboutPageTemplate = ({
                             <td>〒890-0022 鹿児島県鹿児島市小野町3263番地</td>
                           </tr>
                           <tr>
+                            <th>連絡先</th>
+                            <td>TEL: XXXX-XX-XXXX, FAX: XXXX-YY-YYYY, EMAIL: xx@x.com</td>
+                          </tr>
+                          <tr>
                             <th>設立</th>
                             <td></td>
                           </tr>

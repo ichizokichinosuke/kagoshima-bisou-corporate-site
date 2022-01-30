@@ -42,7 +42,7 @@ export const CertPageTemplate = ({
                 <div className="columns">
                   <div className="column">
                     <div className="content">
-                      <table className="table is-hoverable is-bordered has-text-centered">
+                      <table className="table is-hoverable is-bordered has-text-lefted">
                         <thead>
                           <tr>
                             <th>破砕施設</th>
@@ -150,15 +150,13 @@ export const CertPageTemplate = ({
                 </table>
                 <h2 className="title is-3">産業廃棄物収集運搬業</h2>
                 <table className="table is-hoverable is-bordered has-text-centered">
-                  <thead>
-                    <tr>
-                      <th>加入者番号</th>
-                      <th>公開確認番号</th>
-                    </tr>
-                  </thead>
                   <tbody>
                     <tr>
+                      <th>加入者番号</th>
                       <td>2028277</td>
+                    </tr>
+                    <tr>
+                      <th>公開確認番号</th>
                       <td>766204</td>
                     </tr>
                   </tbody>

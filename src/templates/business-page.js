@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
-import { getImage } from "gatsby-plugin-image";
+import { getImage, StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
 // import Features from "../components/Features";
 // import Testimonials from "../components/Testimonials";
@@ -28,6 +28,16 @@ export const BusinessPageTemplate = ({
   const fullWidthImage = getImage(fullImage) || fullImage;
   const fwiCar = getImage(pricing.image) || pricing.image;
 
+  const facilityImage = "../img/facility.jpg";
+  const redContainerImage = "../img/red-container.jpg";
+  const processBLocksImage = "../img/process-blocks.jpg";
+  const excavatorCarsImage = "../img/excavator-cars.jpg";
+  const bulldozersImage = "../img/bulldozers.jpg";
+  const vehicleImage = "../img/vehicle.jpg";
+  const blueCarImage = "../img/car.jpg";
+  const imageHeight = 400;
+  // const imageWidth = 500*3;
+
   return (
     <div className="content">
       <FullWidthImage img={heroImage} title={title} subheading={subheading}/>
@@ -42,8 +52,34 @@ export const BusinessPageTemplate = ({
                 <p className="is-size-5">{description}</p>
               </div>
             </div>
-            <FullWidthImage img={fwiInterimProcess} brightness={100}/>
-            {/* </div> */}
+            <div className="content has-text-centered">
+              <FullWidthImage img={fwiInterimProcess} brightness={100} />
+              <h3>処理設備</h3>
+            {/* <StaticImage src={facilityImage} height={imageHeight} /> */}
+            </div>
+            <div className="columns has-text-centered">
+              {/* <div className="column"> */}
+                {/* <FullWidthImage img={fwiInterimProcess} brightness={100}/> */}
+              {/* </div> */}
+              <div className="column">
+                <StaticImage src={processBLocksImage} height={imageHeight} />
+                <h3>砕石</h3>
+              </div>
+              <div className="column">
+                <StaticImage src={redContainerImage} height={imageHeight} />
+                <h3>コンテナ</h3>
+              </div>
+            </div>
+            <div className="columns has-text-centered">
+              <div className="column">
+                <StaticImage src={excavatorCarsImage} height={imageHeight} />
+                <h3>ショベルカー</h3>
+              </div>
+              <div className="column">
+                <StaticImage src={bulldozersImage} height={imageHeight} />
+                <h3>ブルドーザー等</h3>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -60,7 +96,16 @@ export const BusinessPageTemplate = ({
                 {/* <Pricing data={pricing.plans} /> */}
               </div>
             </div>
-            <FullWidthImage img={fwiCar} brightness={100}/>
+            <div className="columns has-text-centered">
+              <div className="column">
+                <StaticImage src={vehicleImage} height={imageHeight}/>
+                <h3>運搬車両</h3>
+              </div>
+              <div className="column">
+                <StaticImage src={blueCarImage} height={imageHeight}/>
+                <h3>青車両</h3>
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -16,7 +16,7 @@ export const FacilityDetailTemplate = ({ image, title, subheading }) => {
               <div className="section">
                 <h1 className="title is-2">破砕施設</h1>
                 <div className="content">
-                  <table className="table is-hoverable is-bordered has-text-centered">
+                  <table className="table is-hoverable is-bordered has-text-lefted">
                     <thead>
                       <tr>
                         <th>処理可能ごみ</th>
@@ -50,7 +50,7 @@ export const FacilityDetailTemplate = ({ image, title, subheading }) => {
                 </div>
                 <h1 className="title is-2">圧縮施設</h1>
                 <div className="content">
-                    <table className="table is-hoverable is-bordered has-text-centered">
+                    <table className="table is-hoverable is-bordered has-text-lefted">
                         <thead>
                             <tr>
                                 <th>処理可能ごみ</th>
@@ -79,7 +79,7 @@ export const FacilityDetailTemplate = ({ image, title, subheading }) => {
                 </div>
                 <h1 className="title is-2">選別施設</h1>
                 <div className="content">
-                    <table className="table is-hoverable is-bordered has-text-centered">
+                    <table className="table is-hoverable is-bordered has-text-lefted">
                         <thead>
                             <tr>
                                 <th>処理可能ごみ</th>
@@ -96,7 +96,7 @@ export const FacilityDetailTemplate = ({ image, title, subheading }) => {
                 </div>
                 <h1 className="title is-2">焼却施設</h1>
                 <div className="content">
-                    <table className="table is-hoverable is-bordered has-text-centered">
+                    <table className="table is-hoverable is-bordered has-text-lefted">
                         <thead>
                             <tr>
                                 <th>処理可能ごみ</th>
