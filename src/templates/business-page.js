@@ -42,7 +42,7 @@ export const BusinessPageTemplate = ({
                 <p className="is-size-5">{description}</p>
               </div>
             </div>
-            <FullWidthImage img={fwiInterimProcess} />
+            <FullWidthImage img={fwiInterimProcess} brightness={100}/>
             {/* </div> */}
           </div>
         </div>
@@ -60,7 +60,7 @@ export const BusinessPageTemplate = ({
                 {/* <Pricing data={pricing.plans} /> */}
               </div>
             </div>
-            <FullWidthImage img={fwiCar} />
+            <FullWidthImage img={fwiCar} brightness={100}/>
           </div>
         </div>
       </section>

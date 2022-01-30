@@ -8,9 +8,12 @@ export default function FullWidthImage(props) {
     img,
     title,
     subheading,
+    brightness = 40,
     imgPosition = "center",
   } = props;
   // const shadowColor= "#5c8d89";
+  const imageBrightness = "brightness(" + brightness + "%)";
+  console.log(imageBrightness);
 
   return (
     <React.Fragment>
@@ -47,7 +50,8 @@ export default function FullWidthImage(props) {
               gridArea: "1/1",
               // You can set a maximum height for the image, if you wish.
               maxHeight: height,
-              filter: "brightness(60%)",
+              // filter: "brightness(60%)",
+              filter: imageBrightness,
             }}
             layout="fullWidth"
             // You can optionally force an aspect ratio for the generated image
@@ -113,4 +117,6 @@ FullWidthImage.propTypes = {
   title: PropTypes.string,
   height: PropTypes.number,
   subheading: PropTypes.string,
+  imgPosition: PropTypes.string,
+  brightness: PropTypes.number,
 };

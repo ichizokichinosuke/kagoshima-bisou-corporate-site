@@ -2,12 +2,12 @@
 templateKey: 'business-page'
 path: /business
 title: 事業案内
-image: /img/貨物赤.jpg
+image: /img/excavaor-car.jpg
 heading: 中間処理場（砕石施設）
 subheading: Service information
 description: >-
   がれきや木クズの破砕だけでなく、資源リサイクルにも力を入れ、環境に配慮した事業にも積極的に取り組んでいます。
-full_image_interim_process: /img/貨物.jpg
+full_image_interim_process: /img/facility.jpg
 intro:
   blurbs:
     - image: /img/coffee.png
