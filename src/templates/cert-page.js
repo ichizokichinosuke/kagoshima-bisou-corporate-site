@@ -1,5 +1,5 @@
 import React from "react";
-import Proptypes from "prop-types";
+// import Proptypes from "prop-types";
 import { graphql, Link } from "gatsby";
 import { getImage, StaticImage } from "gatsby-plugin-image";
 
@@ -11,13 +11,13 @@ export const CertPageTemplate = ({
   image,
   title,
   subheading,
-  content,
-  contentComponent,
-  syobunkyokaImage,
+  // content,
+  // contentComponent,
+  // syobunkyokaImage,
 }) => {
   const heroImage = getImage(image) || image;
   // const syobunImage = getImage(syobunkyokaImage) || syobunkyokaImage;
-  const PageContent = contentComponent || Content;
+  // const PageContent = contentComponent || Content;
   const certSyobunImage = "../img/処分許可証.png";
   const certSyuunImage = "../img/県収集運搬.png";
   const certResycleImage = "../img/certi_resycle.jpeg";

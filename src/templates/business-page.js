@@ -25,10 +25,10 @@ export const BusinessPageTemplate = ({
 }) => {
   const heroImage = getImage(image) || image;
   const fwiInterimProcess = getImage(fullImageInterimProcess) || fullImageInterimProcess;
-  const fullWidthImage = getImage(fullImage) || fullImage;
-  const fwiCar = getImage(pricing.image) || pricing.image;
+  // const fullWidthImage = getImage(fullImage) || fullImage;
+  // const fwiCar = getImage(pricing.image) || pricing.image;
 
-  const facilityImage = "../img/facility.jpg";
+  // const facilityImage = "../img/facility.jpg";
   const redContainerImage = "../img/red-container.jpg";
   const processBLocksImage = "../img/process-blocks.jpg";
   const excavatorCarsImage = "../img/excavator-cars.jpg";

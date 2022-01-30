@@ -4,7 +4,7 @@ import { graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
-import Content, { HTMLContent } from "../components/Content";
+import { HTMLContent } from "../components/Content";
 import FullWidthImage from "../components/FullWidthImage";
 
 // eslint-disable-next-line
@@ -13,29 +13,10 @@ export const AboutPageTemplate = ({
   title,
   subheading,
   // content,
-  contentComponent
+  // contentComponent
 }) => {
   const heroImage = getImage(image) || image;
   // const PageContent = contentComponent || Content;
-
-  const containerStyle = {
-    width: "100vh",
-    height: "50vh",
-  }
-
-  const positionCompany = {
-    lat: 31.604830736123052,
-    lng: 130.5064537850215,
-  };
-
-  const markerLabelCompany = {
-    color: "white",
-    fontFamily: "sans-serif",
-    fontSize: "15px",
-    fontWeight: "100",
-    // text: "鹿児島美掃",
-  };
-
 
   return (
     <div>

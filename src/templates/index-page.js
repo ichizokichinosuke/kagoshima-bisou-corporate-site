@@ -4,11 +4,9 @@ import { Link, graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
-// import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 import FullWidthImage from "../components/FullWidthImage";
 
-// eslint-disable-next-line
 export const IndexPageTemplate = ({
   image,
   title,
@@ -55,7 +53,7 @@ export const IndexPageTemplate = ({
                   </div> */}
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-2">
-                      Latest news
+                      新着情報
                     </h3>
                     <BlogRoll />
                     <div className="column is-12 has-text-centered">

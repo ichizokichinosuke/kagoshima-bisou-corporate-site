@@ -1,7 +1,6 @@
 import * as React from "react";
 import { navigate } from "gatsby-link";
 import Layout from "../../components/Layout";
-import FullWidthImage from "../../components/FullWidthImage";
 
 function encode(data) {
   return Object.keys(data)
