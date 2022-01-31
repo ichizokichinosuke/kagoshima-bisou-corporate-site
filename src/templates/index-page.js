@@ -10,11 +10,8 @@ import FullWidthImage from "../components/FullWidthImage";
 export const IndexPageTemplate = ({
   image,
   title,
-  // heading,
   subheading,
   mainpitch,
-  // description,
-  // intro,
 }) => {
   const heroImage = getImage(image) || image;
 
@@ -28,29 +25,21 @@ export const IndexPageTemplate = ({
               <div className="column is-10 is-offset-1">
                 <div className="content">
                   <div className="content">
-                    <div className="tile">
-                      <h1 className="title">{mainpitch.title}</h1>
-                    </div>
-                    <div className="tile">
-                      <h4 className="subtitle">{mainpitch.description}</h4>
-                    </div>
+                      <h1 className="title">ごあいさつ</h1>
+                      <p>
+                        <strong>私たちは、廃棄物を取り扱う会社です。</strong>
+                      </p>
+                      <p>
+                        廃棄物には、皆さまの日常生活で排出されるものや、企業等の事業活動で排出されるものなど、様々な種類があります。毎年、鹿児島県では約900万トンもの廃棄物が排出されていますが、多くの人々の不断の努力によってキレイで安全な街が維持されています。
+                      </p>
+                      <p>
+                        私たちが目指すのも、その維持への貢献です。
+                      </p>
+                      <blockquote><strong>この素晴らしい街のため、そして子どもたちの未来のために、持続可能で住みよい社会を作り続ける。</strong></blockquote>
+                       <p>
+                        これの実現に向け、私たち鹿児島美掃はスタッフ一同、真正面から事業に取り組んでまいります。
+                      </p>
                   </div>
-                  {/* <div className="columns">
-                    <div className="column is-12">
-                      <h3 className="has-text-weight-semibold is-size-2">
-                        {heading}
-                      </h3>
-                      <p>{description}</p>
-                    </div>
-                  </div>
-                  <Features gridItems={intro.blurbs} />
-                  <div className="columns">
-                    <div className="column is-12 has-text-centered">
-                      <Link className="btn" to="/products">
-                        See all products
-                      </Link>
-                    </div>
-                  </div> */}
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-2">
                       新着情報
@@ -75,13 +64,8 @@ export const IndexPageTemplate = ({
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
-  heading: PropTypes.string,
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
-  description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
 };
 
 const IndexPage = ({ data }) => {
@@ -92,11 +76,8 @@ const IndexPage = ({ data }) => {
       <IndexPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
-        heading={frontmatter.heading}
         subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
-        intro={frontmatter.intro}
       />
     </Layout>
   );
@@ -122,23 +103,9 @@ export const pageQuery = graphql`
             gatsbyImageData(quality: 100, layout: FULL_WIDTH)
           }
         }
-        heading
         subheading
         mainpitch {
           title
-          description
-        }
-        description
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
-              }
-            }
-            text
-          }
-          heading
           description
         }
       }
