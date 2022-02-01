@@ -72,11 +72,11 @@ export const BusinessPageTemplate = ({
                     <StaticImage src={concreteStoreImage} height={imageHeight} />
                   </div>
                   <div className="column">
-                    <h3>廃プラ・がれき等分別ピット</h3>
+                    <h3 className="is-3">廃プラ・がれき等分別ピット</h3>
                     <StaticImage src={plasticStoreImage} height={imageHeight} />
                   </div>
                   <div className="column">
-                    <h3>廃石膏ボード保管場所</h3>
+                    <h3 className="is-3">廃石膏ボード保管場所</h3>
                     <StaticImage src={gypsumStoreImage} height={imageHeight} />
                   </div>
                 </div>
