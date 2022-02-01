@@ -2,8 +2,8 @@
 templateKey: 'cert-page'
 path: /cert
 image: /img/load.jpg
-title: お取引先の方へ
-subheading: To customers
+title: 許可証
+subheading: Certification
 syobunkyokaImage: /img/県収集運搬.png
 
 ---

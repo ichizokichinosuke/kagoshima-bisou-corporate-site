@@ -30,6 +30,7 @@ export const BusinessPageTemplate = ({
 
   // const facilityImage = "../img/facility.jpg";
   const redContainerImage = "../img/red-container.jpg";
+  const whiteContainerImage = "../img/white-container.jpg";
   const processBLocksImage = "../img/process-blocks.jpg";
   const excavatorCarsImage = "../img/excavator-cars.jpg";
   const bulldozersImage = "../img/bulldozers.jpg";
@@ -53,32 +54,36 @@ export const BusinessPageTemplate = ({
               </div>
             </div>
             <div className="content has-text-centered">
+              <h3>砕石プラント</h3>
               <FullWidthImage img={fwiInterimProcess} brightness={100} />
-              <h3>処理設備</h3>
             {/* <StaticImage src={facilityImage} height={imageHeight} /> */}
             </div>
+            <div className="section">
             <div className="columns has-text-centered">
               {/* <div className="column"> */}
                 {/* <FullWidthImage img={fwiInterimProcess} brightness={100}/> */}
               {/* </div> */}
               <div className="column">
-                <StaticImage src={processBLocksImage} height={imageHeight} />
-                <h3>砕石</h3>
+                <h3>4tアームロールコンテナ</h3>
+                <StaticImage src={whiteContainerImage} height={imageHeight} />
               </div>
               <div className="column">
-                <StaticImage src={redContainerImage} height={imageHeight} />
                 <h3>コンテナ</h3>
+                <StaticImage src={redContainerImage} height={imageHeight} />
               </div>
+              {/* </div> */}
             </div>
+            {/* <div className="section"> */}
             <div className="columns has-text-centered">
               <div className="column">
+                <h3>バックホウ</h3>
                 <StaticImage src={excavatorCarsImage} height={imageHeight} />
-                <h3>ショベルカー</h3>
               </div>
               <div className="column">
+                <h3>タイヤショベル, フォークリフト</h3>
                 <StaticImage src={bulldozersImage} height={imageHeight} />
-                <h3>ブルドーザー等</h3>
               </div>
+            </div>
             </div>
           </div>
         </div>
@@ -98,12 +103,12 @@ export const BusinessPageTemplate = ({
             </div>
             <div className="columns has-text-centered">
               <div className="column">
+                <h3>収集運搬車両</h3>
                 <StaticImage src={vehicleImage} height={imageHeight}/>
-                <h3>運搬車両</h3>
               </div>
               <div className="column">
+                <h3>パッカー車</h3>
                 <StaticImage src={blueCarImage} height={imageHeight}/>
-                <h3>青車両</h3>
               </div>
             </div>
           </div>

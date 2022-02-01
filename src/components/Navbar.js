@@ -79,7 +79,7 @@ const Navbar = class extends React.Component {
                 事業案内
               </Link>
               <Link className="navbar-item" to="/certification">
-                お取引先の方へ
+                許可証
               </Link>
               <Link className="navbar-item" to="/contact">
                 お問い合わせ
@@ -88,18 +88,6 @@ const Navbar = class extends React.Component {
                 お問い合わせ
               </Link> */}
             </div>
-            {/* <div className="navbar-end has-text-centered">
-              <div class="navbar-item">
-                <div class="field has-addons">
-                  <div class="control">
-                    <input class="input" type="text" name="search" placeholder="keyword search" />
-                  </div>
-                  <div class="control">
-                    <a class="button is-info"><i class="fa fa-search"></i>検索</a>
-                  </div>
-                </div>
-              </div>
-            </div> */}
           </div>
           </div>
         {/* </div> */}

@@ -3,11 +3,11 @@ templateKey: 'business-page'
 path: /business
 title: 事業案内
 image: /img/excavator-car.jpg
-heading: 中間処理場（砕石施設）
+heading: 中間処理場
 subheading: Service information
 description: >-
   事業活動を行う際に必ず生じるゴミの中間処理を行います。
-  がれきや木クズ等、あらゆるゴミの破砕に対応しているだけでなく、環境に配慮した資源リサイクルにも力を入れて取り組んでいます。
+  廃プラやがれき等、あらゆるゴミの破砕に対応しているだけでなく、環境に配慮した資源リサイクルにも力を入れて取り組んでいます。
 full_image_interim_process: /img/facility.jpg
 intro:
   blurbs:

@@ -35,9 +35,9 @@ export const CertPageTemplate = ({
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="section">
-                <h1 className="title is-2">許可証</h1>
+                {/* <h1 className="title is-2">許可証</h1> */}
                 {/* <div className="block"></div> */}
-                <h2 className="title is-3">産業廃棄物処分業許可</h2>
+                <h2 className="title is-2">産業廃棄物処分業許可</h2>
                 <h3 className="title is-4">施設概要</h3>
                 <div className="columns">
                   <div className="column">
@@ -66,6 +66,10 @@ export const CertPageTemplate = ({
                           <tr>
                             <th>4. がれき類、ガラス、コンクリート、陶磁器くず</th>
                             <td>288t/日</td>
+                          </tr>
+                          <tr>
+                            <th>5. 金属（蛍光灯等）、ガラス、コンクリート、陶磁器くず</th>
+                            <td>3.1t/日</td>
                           </tr>
                         </tbody>
                       </table>
