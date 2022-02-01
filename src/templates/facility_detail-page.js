@@ -42,7 +42,7 @@ export const FacilityDetailTemplate = ({ image, title, subheading }) => {
                         <td>288t/日</td>
                       </tr>
                       <tr>
-                          <th>5. 金属、ガラス、コンクリート、陶磁器くず</th>
+                          <th>5. 金属（蛍光灯等）、ガラス、コンクリート、陶磁器くず</th>
                           <td>3.1t/日</td>
                       </tr>
                     </tbody>

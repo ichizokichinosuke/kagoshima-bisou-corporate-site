@@ -22,8 +22,8 @@ const Footer = class extends React.Component {
             <div className="column is-half">
               <div className="content">
                 <p>〒890-0022 鹿児島県鹿児島市小野町3263番地</p>
-                <p>TEL: XXXX-XX-XXXX</p>
-                <p>FAX: XXXX-YY-YYYY</p>
+                <p>TEL: 099-204-9893</p>
+                <p>FAX: 099-204-9894</p>
               </div>
               <Link to="/contact">
                 <button className="button is-outlined is-rounded is-large">お問い合わせ</button>

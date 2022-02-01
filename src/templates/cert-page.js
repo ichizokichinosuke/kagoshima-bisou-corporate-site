@@ -21,7 +21,7 @@ export const CertPageTemplate = ({
   const certSyobunImage = "../img/処分許可証.png";
   const certSyuunImage = "../img/県収集運搬.png";
   const certResycleImage = "../img/certi_resycle.jpeg";
-  const vehicleImage = "../img/vehicle.jpg";
+  const vehicleImage = "../img/vehicle-another-angle.jpg";
   const facilityImage = "../img/facility.jpg";
 
   const imageHeight = 250;

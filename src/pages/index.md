@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: 株式会社 鹿児島美掃
-image: /img/up.jpg
+image: /img/入口_右前方_斜め.jpg
 # image: /img/bird-view.jpg
 subheading: Kagoshima Biso
 mainpitch:
