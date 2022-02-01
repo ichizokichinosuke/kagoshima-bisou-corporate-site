@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { graphql } from "gatsby";
+import { Link, graphql } from "gatsby";
 import { getImage, StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
 // import Features from "../components/Features";
@@ -29,6 +29,10 @@ export const BusinessPageTemplate = ({
   // const fwiCar = getImage(pricing.image) || pricing.image;
 
   // const facilityImage = "../img/facility.jpg";
+
+  const concreteStoreImage = "../img/コンクリート殻保管場所.jpg";
+  const plasticStoreImage = "../img/廃プラ・がれき等分別ピット.jpg";
+  const gypsumStoreImage = "../img/廃石膏ボード保管場所2.jpg";
   const redContainerImage = "../img/red-container.jpg";
   const whiteContainerImage = "../img/white-container.jpg";
   const processBLocksImage = "../img/process-blocks.jpg";
@@ -40,9 +44,9 @@ export const BusinessPageTemplate = ({
   // const imageWidth = 500*3;
 
   return (
-    <div className="content">
+    <div>
       <FullWidthImage img={heroImage} title={title} subheading={subheading}/>
-      <section className="section section--gradient pb-0">
+      <section className="section section--gradient">
         <div className="container">
           <div className="section">
             <div className="columns">
@@ -54,9 +58,27 @@ export const BusinessPageTemplate = ({
               </div>
             </div>
             <div className="content has-text-centered">
-              <h3>砕石プラント</h3>
-              <FullWidthImage img={fwiInterimProcess} brightness={100} />
-            {/* <StaticImage src={facilityImage} height={imageHeight} /> */}
+              <Link to="/">
+                <h3>砕石プラント</h3>
+                <FullWidthImage img={fwiInterimProcess} brightness={100} />
+              {/* <StaticImage src={facilityImage} height={imageHeight} /> */}
+              </Link>
+            </div>
+            <div className="section">
+              <div className="columns has-text-centered">
+                <div className="column">
+                  <h3>コンクリート殻保管場所</h3>
+                  <StaticImage src={concreteStoreImage} height={imageHeight} />
+                </div>
+                <div className="column">
+                  <h3>廃プラ・がれき等分別ピット</h3>
+                  <StaticImage src={plasticStoreImage} height={imageHeight} />
+                </div>
+                <div className="column">
+                  <h3>廃石膏ボード保管場所</h3>
+                  <StaticImage src={gypsumStoreImage} height={imageHeight} />
+                </div>
+              </div>
             </div>
             <div className="section">
             <div className="columns has-text-centered">
@@ -98,7 +120,6 @@ export const BusinessPageTemplate = ({
                   {pricing.heading}
                 </h3>
                 <p className="is-size-5">{pricing.description}</p>
-                {/* <Pricing data={pricing.plans} /> */}
               </div>
             </div>
             <div className="columns has-text-centered">

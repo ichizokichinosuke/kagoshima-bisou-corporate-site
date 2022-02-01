@@ -23,6 +23,7 @@ export const CertPageTemplate = ({
   const certResycleImage = "../img/certi_resycle.jpeg";
   const vehicleImage = "../img/vehicle-another-angle.jpg";
   const facilityImage = "../img/facility.jpg";
+  const processBLocksImage = "../img/process-blocks.jpg";
 
   const imageHeight = 250;
   // const imageWidth = "2rem";
@@ -113,7 +114,7 @@ export const CertPageTemplate = ({
                   <div className="column">
                     <div className="content">
                       <StaticImage
-                        src={facilityImage}
+                        src={processBLocksImage}
                         aspectRatio={3 / 2}
                         objectPosition={"center"}
                         layout="fullWidth"
@@ -131,16 +132,10 @@ export const CertPageTemplate = ({
                   </div>
                 </div>
                 <h1 className="title is-2">
-                  電子マニフェスト（JWネット、Eリバース）
+                  電子マニフェスト（JW NET、e-reverse）
                 </h1>
                 <h2 className="title is-3">産業廃棄物処分業</h2>
                 <table className="table is-hoverable is-bordered has-text-centered">
-                  {/* <thead>
-                                        <tr>
-                                            <th>加入者番号</th>
-                                            <th>公開確認番号</th>
-                                        </tr>
-                                    </thead> */}
                   <tbody>
                     <tr>
                       <th>加入者番号</th>

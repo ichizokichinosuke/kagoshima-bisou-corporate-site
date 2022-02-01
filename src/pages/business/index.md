@@ -1,8 +1,8 @@
 ---
 templateKey: 'business-page'
 path: /business
-title: 事業案内
 image: /img/excavator-car.jpg
+title: 事業案内
 heading: 中間処理場
 subheading: Service information
 description: >-
