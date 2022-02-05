@@ -56,7 +56,7 @@ export const AboutPageTemplate = ({
                           </tr>
                           <tr>
                             <th>資本金</th>
-                            <td></td>
+                            <td>1000万円</td>
                           </tr>
                           <tr>
                             <th rowSpan={4}>主な事業内容</th>
@@ -86,6 +86,47 @@ export const AboutPageTemplate = ({
                       </table>
                     </div>
                   </div>
+                </div>
+              </div>
+              <div className="section">
+                <div className="content">
+                  <h2 className="title is-2">関連企業</h2>
+                  <h3 className="title is-3">KBパートナーズ株式会社</h3>
+                  <table className="table is-hoverable has-text-lefted is-striped">
+                    <tbody>
+                      <tr>
+                        <th>代表取締役社長</th>
+                        <td>小野凌雅</td>
+                      </tr>
+                      <tr>
+                        <th>所在地</th>
+                        <td>〒890-0022 鹿児島県鹿児島市小野町3282番地</td>
+                      </tr>
+                      <tr>
+                        <th>連絡先</th>
+                        <td>TEL: 099-204-9886, FAX: 099-204-9894</td>
+                      </tr>
+
+                      <tr>
+                        <th>資本金</th>
+                        <td>300万円</td>
+                      </tr>
+                      <tr>
+                        <th>設立</th>
+                        <td>令和2年5月</td>
+                      </tr>
+                      <tr>
+                        <th>事業内容</th>
+                        <td>土捨て場事業及び再生砕石販売</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div className="section">
+                <div className="content">
+                  <h2 className="title is-2">沿革</h2>
+
                 </div>
               </div>
               <div className="section">
