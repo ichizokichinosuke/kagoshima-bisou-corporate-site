@@ -66,19 +66,33 @@ export const BusinessPageTemplate = ({
                 </Link>
               </div>
               <div className="section">
-                <div className="columns has-text-centered">
+                <div className="columns has-text-centered is-vcentered mb-0 pb-0">
                   <div className="column">
                     <h3 className="is-3">コンクリート殻保管場所</h3>
+                    {/* <StaticImage src={concreteStoreImage} height={imageHeight} /> */}
+                  </div>
+                  <div className="column">
+                    <h3 className="is-3">廃プラ・がれき等<br />分別ピット</h3>
+                    {/* <StaticImage src={plasticStoreImage} height={imageHeight} /> */}
+                  </div>
+                  <div className="column">
+                    <div className="content">
+                    <h3 className="is-3">廃石膏ボード保管場所</h3>
+                    {/* <StaticImage src={gypsumStoreImage} height={imageHeight} /> */}
+                    </div>
+                  </div>
+                </div>
+                <div className="columns mt-0 pt-0">
+                  <div className="column">
                     <StaticImage src={concreteStoreImage} height={imageHeight} />
                   </div>
                   <div className="column">
-                    <h3 className="is-3">廃プラ・がれき等分別ピット</h3>
                     <StaticImage src={plasticStoreImage} height={imageHeight} />
                   </div>
                   <div className="column">
-                    <h3 className="is-3">廃石膏ボード保管場所</h3>
                     <StaticImage src={gypsumStoreImage} height={imageHeight} />
                   </div>
+
                 </div>
               </div>
               <div className="section">
