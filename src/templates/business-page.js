@@ -30,9 +30,9 @@ export const BusinessPageTemplate = ({
 
   // const facilityImage = "../img/facility.jpg";
 
-  const concreteStoreImage = "../img/コンクリート殻保管場所.jpg";
-  const plasticStoreImage = "../img/廃プラ・がれき等分別ピット.jpg";
-  const gypsumStoreImage = "../img/廃石膏ボード保管場所2.jpg";
+  const concreteStoreImage = "../img/concrete-store.jpg";
+  const plasticStoreImage = "../img/plastic-store.jpg";
+  const gypsumStoreImage = "../img/gypsum-store.jpg";
   const redContainerImage = "../img/red-container.jpg";
   const whiteContainerImage = "../img/white-container.jpg";
   const processBLocksImage = "../img/process-blocks.jpg";
@@ -128,13 +128,13 @@ export const BusinessPageTemplate = ({
         {/* <FullWidthImage img={fullWidthImage} imgPosition={"bottom"} /> */}
         <section className="section section--gradient pt-0">
           <div className="container">
-            <div className="section">
               <div className="columns">
                 <div className="column is-10 is-offset-1">
                   <h3 className="has-text-weight-semibold is-size-2">
                     {pricing.heading}
                   </h3>
                   <p className="is-size-5">{pricing.description}</p>
+                  {/* <p className="is-size-5"><Link to="/">保有車両詳細</Link></p> */}
                 </div>
               </div>
               <div className="columns has-text-centered">
@@ -147,8 +147,13 @@ export const BusinessPageTemplate = ({
                   <StaticImage src={blueCarImage} height={imageHeight}/>
                 </div>
               </div>
+              <div className="columns">
+                <div className="column is-10 is-offset-1">
+                  <Link to="/">保有車両詳細</Link>
+                </div>
+              </div>
+
             </div>
-          </div>
         </section>
       </div>
     </div>
