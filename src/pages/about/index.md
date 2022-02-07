@@ -1,9 +1,9 @@
 ---
 templateKey: 'about-page'
 path: /about
-image: /img/office.jpg
 title: 会社情報
 subheading: About our Company
+image: /img/office.jpg
 ---
 ## 会社概要
 

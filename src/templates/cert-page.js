@@ -11,9 +11,6 @@ export const CertPageTemplate = ({
   image,
   title,
   subheading,
-  // content,
-  // contentComponent,
-  // syobunkyokaImage,
 }) => {
   const heroImage = getImage(image) || image;
   // const syobunImage = getImage(syobunkyokaImage) || syobunkyokaImage;
@@ -179,8 +176,6 @@ const CertPage = ({ data }) => {
         image={post.frontmatter.image}
         title={post.frontmatter.title}
         subheading={post.frontmatter.subheading}
-        content={post.html}
-        syobunkyokaImage={post.frontmatter.syobunkyokaImage}
       />
     </Layout>
   );

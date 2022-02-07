@@ -3,10 +3,6 @@ import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 import { getImage, StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
-// import Features from "../components/Features";
-// import Testimonials from "../components/Testimonials";
-// import Pricing from "../components/Pricing";
-// import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 import FullWidthImage from "../components/FullWidthImage";
 
 // eslint-disable-next-line
@@ -22,10 +18,6 @@ export const BusinessPageTemplate = ({
 }) => {
   const heroImage = getImage(image) || image;
   const fwiInterimProcess = getImage(fullImageInterimProcess) || fullImageInterimProcess;
-  // const fullWidthImage = getImage(fullImage) || fullImage;
-  // const fwiCar = getImage(pricing.image) || pricing.image;
-
-  // const facilityImage = "../img/facility.jpg";
 
   const concreteStoreImage = "../img/concrete-store.jpg";
   const plasticStoreImage = "../img/plastic-store.jpg";

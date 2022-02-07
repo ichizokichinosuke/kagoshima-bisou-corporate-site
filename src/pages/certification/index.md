@@ -1,11 +1,9 @@
 ---
 templateKey: 'cert-page'
 path: /cert
-image: /img/load.jpg
 title: 許可証
 subheading: Certification
-syobunkyokaImage: /img/県収集運搬.png
-
+image: /img/load.jpg
 ---
 ## 許可証
 
