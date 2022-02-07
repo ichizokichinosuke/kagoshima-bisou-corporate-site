@@ -140,7 +140,7 @@ export const BusinessPageTemplate = ({
                   <StaticImage src={vehicleImage} height={imageHeight}/>
                 </div>
                 <div className="column">
-                  <h3>パッカー車</h3>
+                  <h3>塵芥車</h3>
                   <StaticImage src={blueCarImage} height={imageHeight}/>
                 </div>
               </div>
