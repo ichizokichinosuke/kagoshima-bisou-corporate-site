@@ -149,7 +149,6 @@ export const BusinessPageTemplate = ({
                   <Link to="/">保有車両詳細</Link>
                 </div>
               </div>
-
             </div>
         </section>
       </div>
