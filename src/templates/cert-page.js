@@ -83,7 +83,7 @@ export const CertPageTemplate = ({
                 </div>
 
                 <h2 className="title is-3">産業廃棄物収集運搬業許可</h2>
-                <h3 className="title is-4">保有車両</h3>
+                {/* <h3 className="title is-4">保有車両</h3> */}
                 <div className="columns">
                   <div className="column">
                     <div className="content">
@@ -106,7 +106,7 @@ export const CertPageTemplate = ({
                   </div>
                 </div>
                 <h2 className="title is-3">かごしま認定リサイクル製品認定証</h2>
-                <h3 className="title is-4">設備</h3>
+                {/* <h3 className="title is-4">設備</h3> */}
                 <div className="columns">
                   <div className="column">
                     <div className="content">

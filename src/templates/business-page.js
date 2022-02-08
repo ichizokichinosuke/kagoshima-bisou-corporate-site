@@ -138,7 +138,7 @@ export const BusinessPageTemplate = ({
               </div>
               <div className="columns">
                 <div className="column is-10 is-offset-1">
-                  <Link to="/">保有車両詳細</Link>
+                  <Link to="./vehicle_detail">保有車両詳細</Link>
                 </div>
               </div>
             </div>
