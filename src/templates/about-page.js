@@ -17,6 +17,7 @@ export const AboutPageTemplate = ({
 }) => {
   const heroImage = getImage(image) || image;
   const facilityMapImage = "../img/facility-map.png";
+  const kbImage = "../img/kb.jpg";
   const imageHeight = 250;
   const imageWidth = 500;
 
@@ -95,6 +96,8 @@ export const AboutPageTemplate = ({
                 <div className="content">
                   <h2 className="title is-2">関連企業</h2>
                   <h3 className="title is-3">KBパートナーズ株式会社</h3>
+                  <div className="columns">
+                  <div className="column">
                   <table className="table is-hoverable has-text-lefted is-striped">
                     <tbody>
                       <tr>
@@ -124,6 +127,11 @@ export const AboutPageTemplate = ({
                       </tr>
                     </tbody>
                   </table>
+                  </div>
+                  <div className="column is-one-third">
+                    <StaticImage src={kbImage} />
+                  </div>
+                  </div>
                 </div>
               </div>
               <div className="section">
