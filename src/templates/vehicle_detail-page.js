@@ -4,6 +4,43 @@ import { getImage, StaticImage } from "gatsby-plugin-image";
 import FullWidthImage from "../components/FullWidthImage";
 import { graphql } from "gatsby";
 
+export const VehicleTable = ({ capacity, maxLoad, totalHeavy, length, width, height, displacement }) => {
+  return (
+    <table className="table is-hoverable has-text-lefted is-striped">
+      <tbody>
+          <tr>
+              <th>乗車定員</th>
+              <td>{capacity}</td>
+          </tr>
+          <tr>
+              <th>最大積載量</th>
+              <td>{maxLoad}</td>
+          </tr>
+          <tr>
+              <th>車両総重量</th>
+              <td>{totalHeavy}</td>
+          </tr>
+          <tr>
+              <th>長さ</th>
+              <td>{length}</td>
+          </tr>
+          <tr>
+              <th>幅</th>
+              <td>{width}</td>
+          </tr>
+          <tr>
+              <th>高さ</th>
+              <td>{height}</td>
+          </tr>
+          <tr>
+              <th>総排気量</th>
+              <td>{displacement}</td>
+          </tr>
+      </tbody>
+    </table>
+  )
+}
+
 export const VehicleDetailTemplate = ({ image, title, subheading }) => {
   const heroImage = getImage(image) || image;
   const hino10tDump = "../img/hino-10tdump.jpg";
@@ -24,40 +61,8 @@ export const VehicleDetailTemplate = ({ image, title, subheading }) => {
                             <StaticImage src={hino10tDump} height={imageHeight}/>
                         </div>
                         <div className="column">
-                            <table className="table is-hoverable has-text-lefted is-striped">
-                                <tbody>
-                                    <tr>
-                                        <th>乗車定員</th>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <th>最大積載量</th>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <th>車両総重量</th>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <th>長さ</th>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <th>幅</th>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <th>高さ</th>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <th>総排気量</th>
-                                        <td></td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                         <VehicleTable capacity="20" maxLoad="400" totalHeavy="200" length="40" width="50" height="10" displacement="30" />
                         </div>
-
                     </div>
 
                 </div>
