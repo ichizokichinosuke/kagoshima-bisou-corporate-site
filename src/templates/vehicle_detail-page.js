@@ -64,7 +64,6 @@ export const VehicleDetailTemplate = ({ image, title, subheading }) => {
                          <VehicleTable capacity="20" maxLoad="400" totalHeavy="200" length="40" width="50" height="10" displacement="30" />
                         </div>
                     </div>
-
                 </div>
               </div>
             </div>

@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Kagoshima Biso corporate web page",
     description:
-      "This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.",
+      "現在開発中の、鹿児島美掃のコーポレートサイトです。",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
