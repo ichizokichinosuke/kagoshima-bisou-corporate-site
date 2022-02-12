@@ -4,7 +4,7 @@ import { getImage, StaticImage } from "gatsby-plugin-image";
 import FullWidthImage from "../components/FullWidthImage";
 import { graphql } from "gatsby";
 
-export const FacilityDetailTemplate = ({ image, title, subheading }) => {
+const FacilityDetailTemplate = ({ image, title, subheading }) => {
   const heroImage = getImage(image) || image;
   return (
     <div>

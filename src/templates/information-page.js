@@ -7,7 +7,7 @@ import Layout from "../components/Layout";
 import BlogRoll from "../components/BlogRoll";
 import FullWidthImage from "../components/FullWidthImage";
 
-export const InformationPageTemplate = ({
+const InformationPageTemplate = ({
   image,
   title,
   subheading,

@@ -4,7 +4,7 @@ import { getImage, StaticImage } from "gatsby-plugin-image";
 import FullWidthImage from "../components/FullWidthImage";
 import { graphql } from "gatsby";
 
-export const VehicleTable = ({ capacity, maxLoad, totalHeavy, length, width, height, displacement }) => {
+const VehicleTable = ({ capacity, maxLoad, totalHeavy, length, width, height, displacement }) => {
   return (
     <table className="table is-hoverable has-text-lefted is-striped">
       <tbody>
@@ -41,7 +41,7 @@ export const VehicleTable = ({ capacity, maxLoad, totalHeavy, length, width, hei
   )
 }
 
-export const VehicleDetailTemplate = ({ image, title, subheading }) => {
+const VehicleDetailTemplate = ({ image, title, subheading }) => {
   const heroImage = getImage(image) || image;
   const hino10tDump = "../img/hino-10tdump.jpg";
   const imageHeight = 300;

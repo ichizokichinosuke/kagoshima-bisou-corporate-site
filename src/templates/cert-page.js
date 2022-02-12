@@ -7,7 +7,7 @@ import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import FullWidthImage from "../components/FullWidthImage";
 
-export const CertPageTemplate = ({
+const CertPageTemplate = ({
   image,
   title,
   subheading,
