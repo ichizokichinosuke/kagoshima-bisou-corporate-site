@@ -82,8 +82,9 @@ const CertPageTemplate = ({
                     </Link>
                   </div>
                 </div>
-
-                <h2 className="title is-3">産業廃棄物収集運搬業許可</h2>
+                </div>
+                <div className="section">
+                <h2 className="title is-2">産業廃棄物収集運搬業許可</h2>
                 {/* <h3 className="title is-4">保有車両</h3> */}
                 <div className="columns">
                   <div className="column">
@@ -106,7 +107,9 @@ const CertPageTemplate = ({
                     </Link>
                   </div>
                 </div>
-                <h2 className="title is-3">かごしま認定リサイクル製品認定証</h2>
+                </div>
+                <div className="section">
+                <h2 className="title is-2">かごしま認定リサイクル製品認定証</h2>
                 {/* <h3 className="title is-4">設備</h3> */}
                 <div className="columns">
                   <div className="column">
@@ -129,9 +132,11 @@ const CertPageTemplate = ({
                     {/* </Link> */}
                   </div>
                 </div>
-                <h1 className="title is-2">
+                </div>
+                <div className="section">
+                <h2 className="title is-2">
                   電子マニフェスト（JW NET、e-reverse）
-                </h1>
+                </h2>
                 <h2 className="title is-3">産業廃棄物処分業</h2>
                 <table className="table is-hoverable is-bordered has-text-centered">
                   <tbody>
@@ -158,7 +163,6 @@ const CertPageTemplate = ({
                     </tr>
                   </tbody>
                 </table>
-                {/* <PageContent className="content" content={content} /> */}
               </div>
             </div>
           </div>
