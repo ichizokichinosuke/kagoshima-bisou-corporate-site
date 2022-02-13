@@ -34,26 +34,17 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-transparent is-fixed-top has-shadow"
+        className="navbar is-fixed-top has-shadow"
         role="navigation"
         aria-label="main-navigation"
       >
-        {/* <div className="box" > */}
         <div className="container">
-          {/* <div className="navbar-brand has-background-primary "> */}
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              {/* <span className="icon is-large" style={{ height: "10em" ,width: "10em"}}> */}
-                <img className="image is-128x128px" src={logo} alt="logo img"/>
-                {/* <img className="image" src={logoName} alt="Company Name" /> */}
+                {/* <img className="image is-128x128px" src={logo} alt="logo img"/> */}
                 {/* <i className="fas fa-home fa-2x" style={{ height: "5em" ,width: "5em"}}></i> */}
-              {/* </span> */}
-              {/* <img src={logo} alt="logo img" /> */}
+                <i className="fas fa-home" />
             </Link>
-            {/* <Link to="/" className="navbar-item" title="Logo name"> */}
-              {/* <img className="image" src={logoName} alt="Company Name" style={{ width: "10em" }} /> */}
-            {/* </Link> */}
-            {/* Hamburger menu */}
             <div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
               data-target="navMenu"
@@ -84,13 +75,14 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/contact">
                 お問い合わせ
               </Link>
-              {/* <Link className="navbar-item" to="/contact/examples">
-                お問い合わせ
-              </Link> */}
             </div>
           </div>
+          <div className="navbar-end">
+            <Link to="/" className="navbar-item" title="Logo">
+              <img className="image is-128x128px" src={logo} alt="logo img"/>
+            </Link>
           </div>
-        {/* </div> */}
+        </div>
       </nav>
     );
   }
