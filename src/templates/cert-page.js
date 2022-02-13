@@ -36,7 +36,8 @@ const CertPageTemplate = ({
                 {/* <h1 className="title is-2">許可証</h1> */}
                 {/* <div className="block"></div> */}
                 <h2 className="title is-2">産業廃棄物処分業許可</h2>
-                <h3 className="title is-4">施設概要</h3>
+                {/* <h3 className="title is-4">施設概要</h3> */}
+                {/* <p>許可詳細は<Link to="./facility_detail">コチラ</Link>。</p> */}
                 <div className="columns">
                   <div className="column">
                     <div className="content">
@@ -72,7 +73,7 @@ const CertPageTemplate = ({
                         </tbody>
                       </table>
                       {/* <p>詳細</p> */}
-                      <Link to="./facility_detail">詳細</Link>
+                      {/* <Link to="./facility_detail">詳細</Link> */}
                     </div>
                   </div>
                   <div className="column is-3">

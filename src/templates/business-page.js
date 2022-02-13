@@ -29,6 +29,8 @@ export const BusinessPageTemplate = ({
   const bulldozersImage = "../img/bulldozers.jpg";
   const vehicleImage = "../img/vehicle.jpg";
   const blueCarImage = "../img/car.jpg";
+  const incineratorImage = "../img/incinerator.jpg";
+
   const imageHeight = 400;
   // const imageWidth = 500*3;
 
@@ -51,9 +53,14 @@ export const BusinessPageTemplate = ({
                 <Link to="/">
                   <h3 className="is-3">砕石プラント</h3>
                   <FullWidthImage img={fwiInterimProcess} brightness={100} />
+                  <p className="is-size-5">砕石工程の詳細はコチラ。</p>
                 {/* <StaticImage src={facilityImage} height={imageHeight} /> */}
                 </Link>
               </div>
+              {/* <div className="section has-text-centered">
+                <h3 className="is-3">焼却炉</h3>
+                <StaticImage src={incineratorImage} height={imageHeight}/>
+              </div> */}
               <div className="section">
                 <div className="columns has-text-centered is-vcentered mb-0 pb-0">
                   <div className="column">
@@ -123,6 +130,12 @@ export const BusinessPageTemplate = ({
                     {pricing.heading}
                   </h3>
                   <p className="is-size-5">{pricing.description}</p>
+                  <p className="is-size-5">各車両詳細は<Link to="./vehicle_detail">コチラ</Link>。</p>
+                  {/* <div className="columns">
+                    <div className="column is-10 is-offset-1">
+                      <Link to="./vehicle_detail">保有車両詳細</Link>
+                    </div>
+                  </div> */}
                   {/* <p className="is-size-5"><Link to="/">保有車両詳細</Link></p> */}
                 </div>
               </div>
@@ -136,11 +149,11 @@ export const BusinessPageTemplate = ({
                   <StaticImage src={blueCarImage} height={imageHeight}/>
                 </div>
               </div>
-              <div className="columns">
+              {/* <div className="columns">
                 <div className="column is-10 is-offset-1">
                   <Link to="./vehicle_detail">保有車両詳細</Link>
                 </div>
-              </div>
+              </div> */}
             </div>
         </section>
       </div>
