@@ -53,7 +53,7 @@ export const BusinessPageTemplate = ({
                 <Link to="/">
                   <h3 className="is-3">砕石プラント</h3>
                   <FullWidthImage img={fwiInterimProcess} brightness={100} />
-                  <p className="is-size-5">砕石工程の詳細はコチラ。</p>
+                  {/* <p className="is-size-5">砕石工程の詳細はコチラ。</p> */}
                 {/* <StaticImage src={facilityImage} height={imageHeight} /> */}
                 </Link>
               </div>
