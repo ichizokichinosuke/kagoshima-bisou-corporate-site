@@ -53,11 +53,10 @@ const VehicleDetailTemplate = ({ image, title, subheading }) => {
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="section">
-
                 <div className="content">
                     <h3 className="title is-3">日野 10tダンプ</h3>
                     <div className="columns">
-                        <div className="column">
+                        <div className="column is-narrow">
                             <StaticImage src={hino10tDump} height={imageHeight}/>
                         </div>
                         <div className="column">
