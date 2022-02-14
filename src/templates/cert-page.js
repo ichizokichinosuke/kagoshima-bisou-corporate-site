@@ -4,7 +4,7 @@ import { graphql, Link } from "gatsby";
 import { getImage, StaticImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
-import Content, { HTMLContent } from "../components/Content";
+import { HTMLContent } from "../components/Content";
 import FullWidthImage from "../components/FullWidthImage";
 
 const CertPageTemplate = ({
@@ -17,7 +17,6 @@ const CertPageTemplate = ({
   const certSyuunImage = "../img/県収集運搬.png";
   const certResycleImage = "../img/certi_resycle.jpeg";
   const vehicleImage = "../img/vehicle-another-angle.jpg";
-  const facilityImage = "../img/facility.jpg";
   const processBLocksImage = "../img/process-blocks.jpg";
 
   const imageHeight = 250;

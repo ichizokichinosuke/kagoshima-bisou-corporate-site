@@ -13,7 +13,7 @@ export const BusinessPageTemplate = ({
   subheading,
   description,
   fullImageInterimProcess,
-  fullImage,
+  // fullImage,
   pricing,
 }) => {
   const heroImage = getImage(image) || image;
@@ -24,12 +24,12 @@ export const BusinessPageTemplate = ({
   const gypsumStoreImage = "../img/gypsum-store.jpg";
   const redContainerImage = "../img/red-container.jpg";
   const whiteContainerImage = "../img/white-container.jpg";
-  const processBLocksImage = "../img/process-blocks.jpg";
+  // const processBLocksImage = "../img/process-blocks.jpg";
   const excavatorCarsImage = "../img/excavator-cars.jpg";
   const bulldozersImage = "../img/bulldozers.jpg";
   const vehicleImage = "../img/vehicle.jpg";
   const blueCarImage = "../img/car.jpg";
-  const incineratorImage = "../img/incinerator.jpg";
+  // const incineratorImage = "../img/incinerator.jpg";
 
   const imageHeight = 400;
 
