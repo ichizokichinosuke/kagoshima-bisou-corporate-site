@@ -32,7 +32,6 @@ export const BusinessPageTemplate = ({
   const incineratorImage = "../img/incinerator.jpg";
 
   const imageHeight = 400;
-  // const imageWidth = 500*3;
 
   return (
     <div>

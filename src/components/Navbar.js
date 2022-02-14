@@ -41,9 +41,11 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-                {/* <img className="image is-128x128px" src={logo} alt="logo img"/> */}
+                <img className="image is-128x128px" src={logo} alt="logo img"/>
                 {/* <i className="fas fa-home fa-2x" style={{ height: "5em" ,width: "5em"}}></i> */}
-                <i className="fas fa-home" />
+                {/* <span />
+                <span /> */}
+                {/* <i className="fas fa-home" /> */}
             </Link>
             <div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
@@ -63,6 +65,10 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-start has-text-centered">
+                <Link className="navbar-item" to="/">
+                  {/* <i className="fas fa-home" /> */}
+                  ホーム
+                </Link>
               <Link className="navbar-item" to="/about">
                 会社情報
               </Link>
@@ -77,11 +83,11 @@ const Navbar = class extends React.Component {
               </Link>
             </div>
           </div>
-          <div className="navbar-end">
+          {/* <div className="navbar-end">
             <Link to="/" className="navbar-item" title="Logo">
               <img className="image is-128x128px" src={logo} alt="logo img"/>
             </Link>
-          </div>
+          </div> */}
         </div>
       </nav>
     );
