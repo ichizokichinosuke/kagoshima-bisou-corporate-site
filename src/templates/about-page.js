@@ -18,6 +18,7 @@ export const AboutPageTemplate = ({
   const heroImage = getImage(image) || image;
   const facilityMapImage = "../img/facility-map.png";
   const kbImage = "../img/kb.jpg";
+  const wholeImage = "../img/whole.jpeg";
   const imageHeight = 250;
   const imageWidth = 500;
 
@@ -206,6 +207,10 @@ export const AboutPageTemplate = ({
               <div className="section">
                   <h2 className="title is-2">アクセスマップ</h2>
                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54369.05701784793!2d130.47149757910157!3d31.604649499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353e5e9ba77af365%3A0xd06b46970b11da10!2z77yI5qCq77yJ6bm_5YWQ5bO2576O5o6D!5e0!3m2!1sja!2sjp!4v1643469837469!5m2!1sja!2sjp" width="1000" height="500" style={{border:0}} allowfullscreen="" loading="lazy"></iframe>
+              </div>
+              <div className="section">
+                <h2 className="title is-2">場内案内</h2>
+                <StaticImage src={wholeImage} />
               </div>
             </div>
           </div>
