@@ -13,7 +13,6 @@ export const BusinessPageTemplate = ({
   subheading,
   description,
   fullImageInterimProcess,
-  // fullImage,
   pricing,
 }) => {
   const heroImage = getImage(image) || image;
@@ -56,10 +55,6 @@ export const BusinessPageTemplate = ({
                 {/* <StaticImage src={facilityImage} height={imageHeight} /> */}
                 </Link>
               </div>
-              {/* <div className="section has-text-centered">
-                <h3 className="is-3">焼却炉</h3>
-                <StaticImage src={incineratorImage} height={imageHeight}/>
-              </div> */}
               <div className="section">
                 <div className="columns has-text-centered is-vcentered mb-0 pb-0">
                   <div className="column">

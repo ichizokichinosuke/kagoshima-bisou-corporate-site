@@ -78,16 +78,14 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/certification">
                 許可証
               </Link>
+              <Link className="navbar-item" to="/recruit">
+                採用情報
+              </Link>
               <Link className="navbar-item" to="/contact">
                 お問い合わせ
               </Link>
             </div>
           </div>
-          {/* <div className="navbar-end">
-            <Link to="/" className="navbar-item" title="Logo">
-              <img className="image is-128x128px" src={logo} alt="logo img"/>
-            </Link>
-          </div> */}
         </div>
       </nav>
     );
