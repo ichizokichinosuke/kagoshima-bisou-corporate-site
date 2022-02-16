@@ -58,6 +58,14 @@ const RecruitPageTemplate = ({
                             <td></td>
                           </tr>
                           <tr>
+                            <th>昇給</th>
+                            <td>年1回（原則）</td>
+                          </tr>
+                          <tr>
+                            <th>賞与</th>
+                            <td>年2回（業績に応じて支給）</td>
+                          </tr>
+                          <tr>
                             <th>休日</th>
                             <td>日曜、当社の定める日(年間休日カレンダーによる)</td>
                           </tr>
@@ -87,14 +95,6 @@ const RecruitPageTemplate = ({
                                 ※契約期間の定め無し<br />
                                 ※3ヶ月の試用期間あり
                             </td>
-                          </tr>
-                          <tr>
-                            <th>昇給</th>
-                            <td>年1回（原則）</td>
-                          </tr>
-                          <tr>
-                            <th>賞与</th>
-                            <td>年2回（業績に応じて支給）</td>
                           </tr>
                           <tr>
                             <th>その他</th>
