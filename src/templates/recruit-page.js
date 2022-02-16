@@ -104,7 +104,7 @@ const RecruitPageTemplate = ({
                             <th>選考方法</th>
                             <td>
                                 面接<br />
-                                ・<Link to="../contact">お問い合わせフォーム</Link>またはお電話でご連絡ください。
+                                ・<Link to="/contact">お問い合わせフォーム</Link>またはお電話でご連絡ください。
                             </td>
                           </tr>
                         </tbody>
