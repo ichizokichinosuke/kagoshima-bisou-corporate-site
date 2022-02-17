@@ -47,7 +47,11 @@ export const AboutPageTemplate = ({
                           </tr>
                           <tr>
                             <th>連絡先</th>
-                            <td>TEL: 099-204-9893, FAX: 099-204-9894, EMAIL: kk_bisou@lime.ocn.ne.jp</td>
+                            <td>
+                              電話番号<span style={{margin: "0 4em 0 0 "}} />099-204-9893
+                              <br />FAX<span style={{margin: "0 6.2em 0 0 "}} />099-204-9894
+                              <br />メールアドレス<span style={{margin: "0 1.25em 0 0 "}} />kk_bisou@lime.ocn.ne.jp
+                            </td>
                           </tr>
                           <tr>
                             <th>設立</th>
@@ -61,14 +65,13 @@ export const AboutPageTemplate = ({
                             <th rowSpan={4}>主な事業内容</th>
                             <td>
                               <span style={{margin: "0 6em 0 0 "}}>産業廃棄物処分業</span>鹿児島市 第08224168330号
-
                             </td>
                           </tr>
                           <tr>
                             <td>
-                            <span style={{margin: "0 4em 0 0 "}}>産業廃棄物収集運搬業</span>鹿児島県 第04609168330号
-                            <br /><span style={{margin: "0 14em 0 0 "}}></span>福岡県 第04000168330号
-                            <br /><span style={{margin: "0 14em 0 0 "}}></span>宮崎県 第04503168330号
+                              <span style={{margin: "0 4em 0 0 "}}>産業廃棄物収集運搬業</span>鹿児島県 第04609168330号
+                              <br /><span style={{margin: "0 14em 0 0 "}}></span>福岡県 第04000168330号
+                              <br /><span style={{margin: "0 14em 0 0 "}}></span>宮崎県 第04503168330号
                             </td>
                           </tr>
                           <tr>
@@ -108,7 +111,10 @@ export const AboutPageTemplate = ({
                       </tr>
                       <tr>
                         <th>連絡先</th>
-                        <td>TEL: 099-204-9886, FAX: 099-204-9894</td>
+                        <td>
+                          電話番号<span style={{margin: "0 2em 0 0 "}} />099-204-9886
+                          <br />FAX<span style={{margin: "0 4.2em 0 0 "}} />099-204-9894
+                        </td>
                       </tr>
 
                       <tr>
