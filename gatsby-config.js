@@ -1,10 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: "Kagoshima Biso corporate web page",
+    title: "Kagoshima Bisou corporate web page",
     description:
-      "現在開発中の、鹿児島美掃のコーポレートサイトです。",
+      "鹿児島美掃のコーポレートサイトです。",
+    siteUrl: "https://www.kk-bisou.co.jp"
   },
   plugins: [
+    "gatsby-plugin-sitemap",
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-plugin-sass",
