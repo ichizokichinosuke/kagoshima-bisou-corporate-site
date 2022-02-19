@@ -85,7 +85,9 @@ export const AboutPageTemplate = ({
                           </tr>
                           <tr>
                             <th>取引銀行</th>
-                            <td>鹿児島銀行, みずほ銀行</td>
+                            <td>
+                              みずほ銀行、鹿児島銀行
+                            </td>
                           </tr>
                         </tbody>
                       </table>

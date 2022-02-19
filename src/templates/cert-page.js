@@ -99,7 +99,7 @@ const CertPageTemplate = ({
                     </div>
                   </div>
                   <div className="column is-3">
-                    <Link to="https://drive.google.com/file/d/1pFQ_YPM5B3ueBeegPp_7lsgtvHaihYDt/view?usp=sharing">
+                    <Link to="https://drive.google.com/file/d/1dV-kk0EP301FN30DfzDU4CCpsTiVNQAz/view?usp=sharing">
                       <StaticImage src={certSyuunImage} height={imageHeight} />
                     </Link>
                   </div>
