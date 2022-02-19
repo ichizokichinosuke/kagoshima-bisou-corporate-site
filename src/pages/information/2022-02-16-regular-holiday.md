@@ -2,7 +2,7 @@
 templateKey: information-post
 title: 2月定休日のお知らせ
 date: 2022-02-16T22:04:10.000Z
-featuredpost: false
+featuredpost: true
 description: >-
 
 tags:
