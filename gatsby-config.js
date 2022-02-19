@@ -3,7 +3,7 @@ module.exports = {
     title: "Kagoshima Bisou corporate web page",
     description:
       "鹿児島美掃のコーポレートサイトです。",
-    siteUrl: "https://www.kk-bisou.co.jp"
+    siteUrl: `https://www.kk-bisou.co.jp`
   },
   plugins: [
     "gatsby-plugin-sitemap",
