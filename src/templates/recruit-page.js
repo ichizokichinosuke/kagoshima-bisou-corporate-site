@@ -1,7 +1,7 @@
 import React from "react";
 // import Proptypes from "prop-types";
 import { graphql, Link } from "gatsby";
-import { getImage, StaticImage } from "gatsby-plugin-image";
+import { getImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
 import { HTMLContent } from "../components/Content";
@@ -31,7 +31,7 @@ const RecruitPageTemplate = ({
                         <h4>持続可能な社会づくりに一緒に取り組みましょう!</h4>
                     </blockquote>
                 </div>
-                <h2 className="title is-2">解体土木作業員</h2>
+                <h2 className="title is-2">解体土木作業員、一般事務</h2>
                 <div className="columns">
                   <div className="column">
                     <div className="content">
@@ -39,15 +39,14 @@ const RecruitPageTemplate = ({
                         <tbody>
                           <tr>
                             <th>募集職種</th>
-                            <td>解体土木作業員</td>
-                          </tr>
-                          <tr>
-                            <th>募集人員</th>
-                            <td>随時募集</td>
+                            <td>
+                              解体土木作業員
+                              <br />一般事務
+                            </td>
                           </tr>
                           <tr>
                             <th>仕事内容</th>
-                            <td></td>
+                            <td>各種現場及び場内作業</td>
                           </tr>
                           <tr>
                             <th>年齢</th>
@@ -55,7 +54,7 @@ const RecruitPageTemplate = ({
                           </tr>
                           <tr>
                             <th>給与</th>
-                            <td></td>
+                            <td>経験や能力等、当社規定により優遇</td>
                           </tr>
                           <tr>
                             <th>昇給</th>
@@ -71,20 +70,18 @@ const RecruitPageTemplate = ({
                           </tr>
                           <tr>
                             <th>勤務時間</th>
-                            <td>8:00 〜 17:00(時間外勤務有)</td>
+                            <td>8:00 〜 17:00(時間外勤務無し)</td>
                           </tr>
                           <tr>
                             <th>福利厚生</th>
-                            <td></td>
+                            <td>各種保険(雇用、労災、健康、厚生)</td>
                           </tr>
                           <tr>
                             <th>応募資格</th>
                             <td>学歴不問／業種・職種未経験者、第二新卒歓迎<br />
-                                ・要普通自動車免許(AT限定可)<br />
                                 ・Word、Excel、Powerpointの基本的な操作スキルをお持ちの方<br />
-                                ・英語力を活かしたい方<br />
-                                ※環境ビジネスに関わったことがある方は歓迎します。<br />
-                                ※建設・電気業界の知識のある方は経験を活かせます。<br />
+                                ※建設・産廃・解体土木業界の知識があれば経験を活かせます。<br />
+                                ※大型免許、土木1級2級保持者、車両系重機、免許保持者は当社規定により優遇します。<br />
                                 ※女性の活躍を積極的に支援するため、ポジティブアクションを適用しています。
                             </td>
                           </tr>
@@ -96,15 +93,15 @@ const RecruitPageTemplate = ({
                                 ※3ヶ月の試用期間あり
                             </td>
                           </tr>
-                          <tr>
+                          {/* <tr>
                             <th>その他</th>
                             <td></td>
-                          </tr>
+                          </tr> */}
                           <tr>
                             <th>選考方法</th>
                             <td>
                                 面接<br />
-                                ・<Link to="/contact">お問い合わせフォーム</Link>またはお電話でご連絡ください。
+                                ・<Link to="/contact">お問い合わせフォーム</Link>またはお電話(099-204-9893)でご連絡ください。
                             </td>
                           </tr>
                         </tbody>

@@ -2,7 +2,7 @@
 templateKey: information-post
 title: ホームページ開設のお知らせ
 date: 2022-02-13T15:04:10.000Z
-featuredpost: true
+featuredpost: false
 featuredimage: /img/入口_右前方_斜め.jpg
 # description: この度ホームページを開設いたしました。今後とも何卒ご愛顧の程よろしくお願いいたします。
 tags:
