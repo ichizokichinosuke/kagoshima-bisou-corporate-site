@@ -14,6 +14,14 @@ const TemplateWrapper = ({ children }) => {
         <html lang="ja" class="has-navbar-fixed-top"/>
         <title>{title}</title>
         <meta name="description" content={description} />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-1DY1W002VW"></script>
+        <script>{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-1DY1W002VW');
+      `}</script>
 
         <link
           rel="apple-touch-icon"
