@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/641c5a5d-4835-4501-958d-b2f3794adcaa/deploy-status)](https://app.netlify.com/sites/eloquent-montalcini-d3976d/deploys)
 
-[ホームページ](https://www.kk-bisou.co.jp)
+[ホームページリンク](https://www.kk-bisou.co.jp)
 
 **Note:** This starter uses [Gatsby v4](https://www.gatsbyjs.com/gatsby-4/).
 
