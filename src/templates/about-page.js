@@ -62,7 +62,7 @@ export const AboutPageTemplate = ({
                             <td>1000万円</td>
                           </tr>
                           <tr>
-                            <th rowSpan={4}>主な事業内容</th>
+                            <th rowSpan={5}>主な事業内容</th>
                             <td>
                               <span style={{margin: "0 6em 0 0 "}}>産業廃棄物処分業</span>鹿児島市 第08224168330号
                             </td>
@@ -84,6 +84,9 @@ export const AboutPageTemplate = ({
                             </td>
                           </tr>
                           <tr>
+                            <td><span style={{margin: "0 4em 0 0 "}}>一般貨物自動運送事業</span>九運貨物 第366号</td>
+                          </tr>
+                          <tr>
                             <th>取引銀行</th>
                             <td>
                               みずほ銀行、鹿児島銀行
@@ -97,7 +100,8 @@ export const AboutPageTemplate = ({
               </div>
               <div className="section">
                 <div className="content">
-                  <h2 className="title is-2">関連企業</h2>
+                  {/* <h2 className="title is-2">関連企業</h2> */}
+                  <h2 className="title is-2">主要取引先</h2>
                   <h3 className="title is-3">KBパートナーズ株式会社</h3>
                   <div className="columns">
                   <div className="column">
@@ -124,7 +128,8 @@ export const AboutPageTemplate = ({
                         <td>300万円</td>
                       </tr>
                       <tr>
-                        <th>設立</th>
+                        {/* <th>設立</th> */}
+                        <th>設立支援</th>
                         <td>令和2年5月</td>
                       </tr>
                       <tr>
@@ -164,6 +169,10 @@ export const AboutPageTemplate = ({
                       <tr>
                         <th>平成26年5月</th>
                         <td>一般建設業 取得</td>
+                      </tr>
+                      <tr>
+                        <th>平成27年12月</th>
+                        <td>一般貨物自動車運送事業 取得</td>
                       </tr>
                       <tr>
                         <th>平成29年11月</th>
