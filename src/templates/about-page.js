@@ -128,8 +128,7 @@ export const AboutPageTemplate = ({
                         <td>300万円</td>
                       </tr>
                       <tr>
-                        {/* <th>設立</th> */}
-                        <th>設立支援</th>
+                        <th>設立</th>
                         <td>令和2年5月</td>
                       </tr>
                       <tr>
@@ -200,7 +199,7 @@ export const AboutPageTemplate = ({
                       </tr>
                       <tr>
                         <th>令和2年5月</th>
-                        <td>KBパートナーズ（株）設立（土捨て場事業、砕石販売事業）</td>
+                        <td>KBパートナーズ（株）設立支援（土捨て場事業、砕石販売事業）</td>
                       </tr>
                       <tr>
                         <th>令和3年3月</th>
