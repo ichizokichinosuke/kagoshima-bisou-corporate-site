@@ -6088,6 +6088,13 @@
     "lodash" "^4.17.21"
     "micromatch" "^4.0.4"
 
+"gatsby-plugin-canonical-urls@^4.8.0":
+  "integrity" "sha512-xlQ93pl0pNSqslFOgTmNYjfC8/D5P1n0YQI6fhdNBluqfC+qfWsCL4YxCt4GcwfOd98XhQF7lRNKLgXaXH7DEA=="
+  "resolved" "https://registry.npmjs.org/gatsby-plugin-canonical-urls/-/gatsby-plugin-canonical-urls-4.8.0.tgz"
+  "version" "4.8.0"
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+
 "gatsby-plugin-image@^2.0.0":
   "integrity" "sha512-wus5ytEwBCKtMgmuFoJ6CzF1cb4z/3MgXB9eEXxpM6U/F+rdBlcDuowwUmT3S6p0y25D/jcn+/RSBYlugRnMvA=="
   "resolved" "https://registry.npmjs.org/gatsby-plugin-image/-/gatsby-plugin-image-2.1.2.tgz"

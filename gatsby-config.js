@@ -3,11 +3,9 @@ module.exports = {
     title: "Kagoshima Bisou corporate web page",
     description:
       "鹿児島美掃のコーポレートサイトです。",
-    siteUrl: `https://www.kk-bisou.co.jp`
+    siteUrl: `https://www.kk-bisou.co.jp/`
   },
   plugins: [
-    "gatsby-plugin-sitemap",
-    "gatsby-plugin-robots-txt",
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-plugin-sass",
@@ -39,6 +37,15 @@ module.exports = {
         name: "images",
       },
     },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://kk-bisou.co.jp`,
+        stripQueryString: true,
+      },
+    },
+    "gatsby-plugin-sitemap",
+    "gatsby-plugin-robots-txt",
     `gatsby-plugin-image`,
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
