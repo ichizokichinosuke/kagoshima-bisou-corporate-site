@@ -175,7 +175,7 @@ export const AboutPageTemplate = ({
                       </tr>
                       <tr>
                         <th>平成29年11月</th>
-                        <td>中間処理事業拡張のため鹿児島市小野町へ移動</td>
+                        <td>中間処理事業拡張のため鹿児島市小野町へ移転</td>
                       </tr>
                       <tr>
                         <th>平成29年12月</th>
