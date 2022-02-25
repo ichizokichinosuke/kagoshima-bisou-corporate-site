@@ -14,7 +14,7 @@ const FacilityDetailTemplate = ({ image, title, subheading }) => {
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="section">
-                <h1 className="title is-2">破砕施設</h1>
+                <h2 className="title is-2">破砕施設</h2>
                 <div className="content">
                   <table className="table is-hoverable is-bordered has-text-lefted">
                     <thead>
@@ -48,7 +48,7 @@ const FacilityDetailTemplate = ({ image, title, subheading }) => {
                     </tbody>
                   </table>
                 </div>
-                <h1 className="title is-2">圧縮施設</h1>
+                <h2 className="title is-2">圧縮施設</h2>
                 <div className="content">
                     <table className="table is-hoverable is-bordered has-text-lefted">
                         <thead>
@@ -77,7 +77,7 @@ const FacilityDetailTemplate = ({ image, title, subheading }) => {
                         </tbody>
                     </table>
                 </div>
-                <h1 className="title is-2">選別施設</h1>
+                <h2 className="title is-2">選別施設</h2>
                 <div className="content">
                     <table className="table is-hoverable is-bordered has-text-lefted">
                         <thead>
@@ -94,7 +94,7 @@ const FacilityDetailTemplate = ({ image, title, subheading }) => {
                         </tbody>
                     </table>
                 </div>
-                <h1 className="title is-2">焼却施設</h1>
+                <h2 className="title is-2">焼却施設</h2>
                 <div className="content">
                     <table className="table is-hoverable is-bordered has-text-lefted">
                         <thead>

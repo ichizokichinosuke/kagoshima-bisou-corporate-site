@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Kagoshima Bisou corporate web page",
+    title: "株式会社鹿児島美掃 | 鹿児島県の産業廃棄物中間処理、収集運搬業はお任せください。",
     description:
-      "鹿児島美掃のコーポレートサイトです。",
+      "株式会社鹿児島美掃は、鹿児島県の産業廃棄物を取り扱う会社です。産廃の処分や収集運搬を通じて、キレイで安全な街の維持に貢献します。",
     siteUrl: `https://www.kk-bisou.co.jp/`
   },
   plugins: [

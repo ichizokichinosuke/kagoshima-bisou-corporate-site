@@ -25,7 +25,7 @@ export const IndexPageTemplate = ({
               <div className="column is-10 is-offset-1">
                 <div className="content">
                   <div className="content">
-                      <h1 className="title">ごあいさつ</h1>
+                      <h2 className="title is-2">ごあいさつ</h2>
                       <p>
                         <strong>私たちは、廃棄物を取り扱う会社です。</strong>
                       </p>
@@ -41,9 +41,9 @@ export const IndexPageTemplate = ({
                       </p>
                   </div>
                   <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
+                    <h2 className="has-text-weight-semibold is-size-2">
                       新着情報
-                    </h3>
+                    </h2>
                     <BlogRoll />
                     <div className="column is-12 has-text-centered">
                       <Link className="btn" to="/information">
