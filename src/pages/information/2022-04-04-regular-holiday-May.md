@@ -11,21 +11,21 @@ tags:
 
 5月の定休日をお知らせします。
 
-5/1（日）
+<span style="color: red;">5/1（日）</span>
 
-5/3（火）
+<span style="color: red;">5/3（火）</span>
 
-5/4（水）
+<span style="color: red;">5/4（水）</span>
 
-5/5（木）
+<span style="color: red;">5/5（木）</span>
 
-5/8（日）
+<span style="color: red;">5/8（日）</span>
 
-5/15（日）
+<span style="color: red;">5/15（日）</span>
 
-5/22（日）
+<span style="color: red;">5/22（日）</span>
 
-5/29（日）
+<span style="color: red;">5/29（日）</span>
 
 
 定休日、夜間等の持ち込みなどございましたらお気軽にご相談、お問い合わせください！
