@@ -129,7 +129,7 @@ const CertPageTemplate = ({
                 </div>
                 <div className="section">
                 <h2 className="title is-2">
-                  電子マニフェスト（JW NET、e-reverse）
+                  電子マニフェスト（JW NET、RVSTA）
                 </h2>
                 <h2 className="title is-3">産業廃棄物処分業</h2>
                 <table className="table is-hoverable is-bordered has-text-centered">
