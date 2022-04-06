@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-// import logo from "../img/logo_concat_3.png";
+import logo from "../img/logo_concat_3.png";
 import { getImage, StaticImage } from "gatsby-plugin-image";
 
 
@@ -44,8 +44,8 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-                {/* <img className="image is-128x128px" src={logo} alt="logo img"/> */}
-                <StaticImage src={logoImg} alt="logo img"/>
+                <img className="image is-128x128px" src={logo} alt="logo img"/>
+                {/* <StaticImage className="image is-128x128px" src={logoImg} alt="logo img"/> */}
                 {/* <i className="fas fa-home fa-2x" style={{ height: "5em" ,width: "5em"}}></i> */}
                 {/* <span />
                 <span /> */}
