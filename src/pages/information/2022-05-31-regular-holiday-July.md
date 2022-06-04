@@ -17,6 +17,8 @@ tags:
 
 <span style="color: red;">7/17（日）</span>
 
+<span style="color: red;">7/18（月）</span>
+
 <span style="color: red;">7/24（日）</span>
 
 <span style="color: red;">7/31（日）</span>
