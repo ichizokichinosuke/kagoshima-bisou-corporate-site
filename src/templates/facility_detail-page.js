@@ -27,11 +27,11 @@ const FacilityDetailTemplate = ({ image, title, subheading }) => {
                     <tbody>
                       <tr>
                         <th>1. 木くず</th>
-                        <td>3.5t/日</td>
+                        <td>4.8t/日</td>
                       </tr>
                       <tr>
                         <th>2. 廃プラスチック類</th>
-                        <td>0.79t/日</td>
+                        <td>4.9t/日</td>
                       </tr>
                       <tr>
                         <th>3. ガラス、コンクリート、陶磁器、紙くず</th>
@@ -44,6 +44,10 @@ const FacilityDetailTemplate = ({ image, title, subheading }) => {
                       <tr>
                           <th>5. 金属（蛍光灯等）、ガラス、コンクリート、陶磁器くず</th>
                           <td>3.1t/日</td>
+                      </tr>
+                      <tr>
+                          <th>6. 繊維くず</th>
+                          <td>2.1t/日</td>
                       </tr>
                     </tbody>
                   </table>

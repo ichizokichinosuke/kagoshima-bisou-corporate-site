@@ -46,11 +46,11 @@ const CertPageTemplate = ({
                         <tbody>
                           <tr>
                             <th>1. 木くず</th>
-                            <td>3.5t/日</td>
+                            <td>4.8t/日</td>
                           </tr>
                           <tr>
                             <th>2. 廃プラスチック類</th>
-                            <td>0.79t/日</td>
+                            <td>4.9t/日</td>
                           </tr>
                           <tr>
                             <th>3. ガラス、コンクリート、陶磁器、紙くず</th>
@@ -66,12 +66,10 @@ const CertPageTemplate = ({
                           </tr>
                         </tbody>
                       </table>
-                      {/* <p>詳細</p> */}
-                      {/* <Link to="./facility_detail">詳細</Link> */}
                     </div>
                   </div>
                   <div className="column is-3">
-                    <Link to="https://drive.google.com/file/d/1pFQ_YPM5B3ueBeegPp_7lsgtvHaihYDt/view?usp=sharing">
+                    <Link to="https://drive.google.com/file/d/1iYwSU4SY0Ip8NV9rGG1ZBwi1tNZyBLax/view?usp=sharing">
                       <StaticImage src={certSyobunImage} height={imageHeight} />
                     </Link>
                   </div>
