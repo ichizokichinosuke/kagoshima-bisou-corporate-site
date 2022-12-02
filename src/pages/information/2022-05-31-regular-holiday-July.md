@@ -2,7 +2,7 @@
 templateKey: information-post
 title: 7月定休日のお知らせ
 date: 2022-05-31T00:04:10.000Z
-featuredpost: true
+featuredpost: false
 description: >-
 
 tags:

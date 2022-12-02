@@ -2,7 +2,7 @@
 templateKey: information-post
 title: 11月定休日のお知らせ
 date: 2022-10-10T00:09:10.000Z
-featuredpost: true
+featuredpost: false
 description: >-
 
 tags:

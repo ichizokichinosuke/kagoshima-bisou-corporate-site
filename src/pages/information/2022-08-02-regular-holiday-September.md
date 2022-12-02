@@ -2,7 +2,7 @@
 templateKey: information-post
 title: 9月定休日のお知らせ
 date: 2022-08-02T00:09:10.000Z
-featuredpost: true
+featuredpost: false
 description: >-
 
 tags:

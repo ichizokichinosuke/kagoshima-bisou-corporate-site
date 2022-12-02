@@ -2,7 +2,7 @@
 templateKey: information-post
 title: 従業員募集
 date: 2022-02-13T22:04:10.000Z
-featuredpost: false
+featuredpost: true
 featuredimage: /img/persons.jpg
 description: >-
   私たちは共に働く仲間を募集しています！
