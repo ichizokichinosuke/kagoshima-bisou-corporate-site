@@ -1,11 +1,11 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Link, graphql } from "gatsby";
-import { getImage } from "gatsby-plugin-image";
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Link, graphql } from 'gatsby'
+import { getImage } from 'gatsby-plugin-image'
 
-import Layout from "../components/Layout";
-import BlogRoll from "../components/BlogRoll";
-import FullWidthImage from "../components/FullWidthImage";
+import Layout from '../components/Layout'
+import BlogRoll from '../components/BlogRoll'
+import FullWidthImage from '../components/FullWidthImage'
 
 export const IndexPageTemplate = ({
   image,
@@ -13,7 +13,7 @@ export const IndexPageTemplate = ({
   subheading,
   // mainpitch,
 }) => {
-  const heroImage = getImage(image) || image;
+  const heroImage = getImage(image) || image
 
   return (
     <div>
@@ -25,20 +25,22 @@ export const IndexPageTemplate = ({
               <div className="column is-10 is-offset-1">
                 <div className="content">
                   <div className="content">
-                      <h2 className="title is-2">ごあいさつ</h2>
-                      <p>
-                        <strong>私たちは、廃棄物を取り扱う会社です。</strong>
-                      </p>
-                      <p>
-                        廃棄物には、皆さまの日常生活で排出されるものや、企業等の事業活動で排出されるものなど、様々な種類があります。毎年、鹿児島県では約900万トンもの廃棄物が排出されていますが、多くの人々の日常の努力によってキレイで安全な街が維持されています。
-                      </p>
-                      <p>
-                        私たちが目指すのも、その維持への貢献です。
-                      </p>
-                      <blockquote><strong>この素晴らしい街のため、そして子どもたちの未来のために、持続可能で住みよい社会を作り続ける。</strong></blockquote>
-                       <p>
-                        これの実現に向け、私たち鹿児島美掃はスタッフ一同、真正面から事業に取り組んでまいります。
-                      </p>
+                    <h2 className="title is-2">ごあいさつ</h2>
+                    <p>
+                      <strong>私たちは、廃棄物を取り扱う会社です。</strong>
+                    </p>
+                    <p>
+                      廃棄物には、皆さまの日常生活で排出されるものや、企業等の事業活動で排出されるものなど、様々な種類があります。毎年、鹿児島県では約900万トンもの廃棄物が排出されていますが、多くの人々の日常の努力によってキレイで安全な街が維持されています。
+                    </p>
+                    <p>私たちが目指すのも、その維持への貢献です。</p>
+                    <blockquote>
+                      <strong>
+                        この素晴らしい街のため、そして子どもたちの未来のために、持続可能で住みよい社会を作り続ける。
+                      </strong>
+                    </blockquote>
+                    <p>
+                      これの実現に向け、私たち鹿児島美掃はスタッフ一同、真正面から事業に取り組んでまいります。
+                    </p>
                   </div>
                   <div className="column is-12">
                     <h2 className="has-text-weight-semibold is-size-2">
@@ -58,18 +60,18 @@ export const IndexPageTemplate = ({
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
-};
+}
 
 const IndexPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark;
+  const { frontmatter } = data.markdownRemark
 
   return (
     <Layout>
@@ -80,8 +82,8 @@ const IndexPage = ({ data }) => {
         mainpitch={frontmatter.mainpitch}
       />
     </Layout>
-  );
-};
+  )
+}
 
 IndexPage.propTypes = {
   data: PropTypes.shape({
@@ -89,9 +91,9 @@ IndexPage.propTypes = {
       frontmatter: PropTypes.object,
     }),
   }),
-};
+}
 
-export default IndexPage;
+export default IndexPage
 
 export const pageQuery = graphql`
   query IndexPageTemplate {
@@ -111,4 +113,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

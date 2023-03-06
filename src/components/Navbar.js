@@ -1,17 +1,16 @@
-import React from "react";
-import { Link } from "gatsby";
-import logo from "../img/logo_concat_3.png";
-import { getImage, StaticImage } from "gatsby-plugin-image";
+import React from 'react'
+import { Link } from 'gatsby'
+import logo from '../img/logo_concat_3.png'
+import { getImage, StaticImage } from 'gatsby-plugin-image'
 
-
-const logoImg = "../img/logo_concat_3.png";
+const logoImg = '../img/logo_concat_3.png'
 const Navbar = class extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       active: false,
-      navBarActiveClass: "",
-    };
+      navBarActiveClass: '',
+    }
   }
 
   toggleHamburger() {
@@ -25,13 +24,13 @@ const Navbar = class extends React.Component {
         // set the class in state for the navbar accordingly
         this.state.active
           ? this.setState({
-              navBarActiveClass: "is-active",
+              navBarActiveClass: 'is-active',
             })
           : this.setState({
-              navBarActiveClass: "",
-            });
+              navBarActiveClass: '',
+            })
       }
-    );
+    )
   }
 
   render() {
@@ -44,12 +43,12 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-                <img className="image is-128x128px" src={logo} alt="logo img"/>
-                {/* <StaticImage className="image is-128x128px" src={logoImg} alt="logo img"/> */}
-                {/* <i className="fas fa-home fa-2x" style={{ height: "5em" ,width: "5em"}}></i> */}
-                {/* <span />
+              <img className="image is-128x128px" src={logo} alt="logo img" />
+              {/* <StaticImage className="image is-128x128px" src={logoImg} alt="logo img"/> */}
+              {/* <i className="fas fa-home fa-2x" style={{ height: "5em" ,width: "5em"}}></i> */}
+              {/* <span />
                 <span /> */}
-                {/* <i className="fas fa-home" /> */}
+              {/* <i className="fas fa-home" /> */}
             </Link>
             <div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
@@ -69,10 +68,10 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-start has-text-centered">
-                <Link className="navbar-item" to="/">
-                  {/* <i className="fas fa-home" /> */}
-                  ホーム
-                </Link>
+              <Link className="navbar-item" to="/">
+                {/* <i className="fas fa-home" /> */}
+                ホーム
+              </Link>
               <Link className="navbar-item" to="/about">
                 会社情報
               </Link>
@@ -92,8 +91,8 @@ const Navbar = class extends React.Component {
           </div>
         </div>
       </nav>
-    );
+    )
   }
-};
+}
 
-export default Navbar;
+export default Navbar

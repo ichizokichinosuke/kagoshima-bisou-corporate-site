@@ -1,25 +1,21 @@
-import React from "react";
+import React from 'react'
 // import Proptypes from "prop-types";
-import { graphql, Link } from "gatsby";
-import { getImage, StaticImage } from "gatsby-plugin-image";
+import { graphql, Link } from 'gatsby'
+import { getImage, StaticImage } from 'gatsby-plugin-image'
 
-import Layout from "../components/Layout";
-import { HTMLContent } from "../components/Content";
-import FullWidthImage from "../components/FullWidthImage";
+import Layout from '../components/Layout'
+import { HTMLContent } from '../components/Content'
+import FullWidthImage from '../components/FullWidthImage'
 
-const CertPageTemplate = ({
-  image,
-  title,
-  subheading,
-}) => {
-  const heroImage = getImage(image) || image;
-  const certSyobunImage = "../img/処分許可証.png";
-  const certSyuunImage = "../img/県収集運搬.png";
-  const certResycleImage = "../img/certi_resycle.jpeg";
-  const vehicleImage = "../img/vehicle-another-angle.jpg";
-  const processBLocksImage = "../img/process-blocks.jpg";
+const CertPageTemplate = ({ image, title, subheading }) => {
+  const heroImage = getImage(image) || image
+  const certSyobunImage = '../img/処分許可証.png'
+  const certSyuunImage = '../img/県収集運搬.png'
+  const certResycleImage = '../img/certi_resycle.jpeg'
+  const vehicleImage = '../img/vehicle-another-angle.jpg'
+  const processBLocksImage = '../img/process-blocks.jpg'
 
-  const imageHeight = 250;
+  const imageHeight = 250
   // const imageWidth = "2rem";
 
   return (
@@ -31,7 +27,9 @@ const CertPageTemplate = ({
             <div className="column is-10 is-offset-1">
               <div className="section">
                 <h2 className="title is-2">産業廃棄物処分業許可</h2>
-                <p>許可詳細は<Link to="./facility_detail">コチラ</Link>。</p>
+                <p>
+                  許可詳細は<Link to="./facility_detail">コチラ</Link>。
+                </p>
                 <div className="columns">
                   <div className="column">
                     <div className="content">
@@ -57,11 +55,16 @@ const CertPageTemplate = ({
                             <td>4.8t/日</td>
                           </tr>
                           <tr>
-                            <th>4. がれき類、ガラス、コンクリート、陶磁器くず</th>
+                            <th>
+                              4. がれき類、ガラス、コンクリート、陶磁器くず
+                            </th>
                             <td>288t/日</td>
                           </tr>
                           <tr>
-                            <th>5. 金属（蛍光灯等）、ガラス、コンクリート、陶磁器くず</th>
+                            <th>
+                              5.
+                              金属（蛍光灯等）、ガラス、コンクリート、陶磁器くず
+                            </th>
                             <td>3.1t/日</td>
                           </tr>
                         </tbody>
@@ -74,8 +77,8 @@ const CertPageTemplate = ({
                     </Link>
                   </div>
                 </div>
-                </div>
-                <div className="section">
+              </div>
+              <div className="section">
                 <h2 className="title is-2">産業廃棄物収集運搬業許可</h2>
                 {/* <h3 className="title is-4">保有車両</h3> */}
                 <div className="columns">
@@ -84,10 +87,10 @@ const CertPageTemplate = ({
                       <StaticImage
                         src={vehicleImage}
                         aspectRatio={3 / 2}
-                        objectPosition={"center"}
+                        objectPosition={'center'}
                         layout="fullWidth"
                         style={{
-                          gridArea: "1/1",
+                          gridArea: '1/1',
                           maxHeight: 400,
                         }}
                       />
@@ -99,8 +102,8 @@ const CertPageTemplate = ({
                     </Link>
                   </div>
                 </div>
-                </div>
-                <div className="section">
+              </div>
+              <div className="section">
                 <h2 className="title is-2">かごしま認定リサイクル製品認定証</h2>
                 {/* <h3 className="title is-4">設備</h3> */}
                 <div className="columns">
@@ -109,10 +112,10 @@ const CertPageTemplate = ({
                       <StaticImage
                         src={processBLocksImage}
                         aspectRatio={3 / 2}
-                        objectPosition={"center"}
+                        objectPosition={'center'}
                         layout="fullWidth"
                         style={{
-                          gridArea: "1/1",
+                          gridArea: '1/1',
                           maxHeight: 400,
                         }}
                       />
@@ -124,8 +127,8 @@ const CertPageTemplate = ({
                     {/* </Link> */}
                   </div>
                 </div>
-                </div>
-                <div className="section">
+              </div>
+              <div className="section">
                 <h2 className="title is-2">
                   電子マニフェスト（JW NET、RVSTA）
                 </h2>
@@ -161,11 +164,11 @@ const CertPageTemplate = ({
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
 const CertPage = ({ data }) => {
-  const { markdownRemark: post } = data;
+  const { markdownRemark: post } = data
   return (
     <Layout>
       <CertPageTemplate
@@ -175,10 +178,10 @@ const CertPage = ({ data }) => {
         subheading={post.frontmatter.subheading}
       />
     </Layout>
-  );
-};
+  )
+}
 
-export default CertPage;
+export default CertPage
 
 export const certPageQuery = graphql`
   query CertPage($id: String!) {
@@ -195,4 +198,4 @@ export const certPageQuery = graphql`
       }
     }
   }
-`;
+`

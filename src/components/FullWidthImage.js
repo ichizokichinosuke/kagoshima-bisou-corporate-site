@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { GatsbyImage } from "gatsby-plugin-image";
+import React from 'react'
+import PropTypes from 'prop-types'
+import { GatsbyImage } from 'gatsby-plugin-image'
 
 export default function FullWidthImage(props) {
   const {
@@ -9,45 +9,45 @@ export default function FullWidthImage(props) {
     title,
     subheading,
     brightness = 40,
-    imgPosition = "center",
-  } = props;
+    imgPosition = 'center',
+  } = props
   // const shadowColor= "#5c8d89";
-  const imageBrightness = "brightness(" + brightness + "%)";
-  console.log(imageBrightness);
+  const imageBrightness = 'brightness(' + brightness + '%)'
+  console.log(imageBrightness)
 
   return (
     <React.Fragment>
       <div
         className="margin-top-0"
         style={{
-          display: "grid",
-          alignItems: "center",
+          display: 'grid',
+          alignItems: 'center',
         }}
       >
         {img?.url ? (
           <img
             src={img}
-            objectFit={"cover"}
+            objectFit={'cover'}
             objectPosition={imgPosition}
             style={{
-              gridArea: "1/1",
+              gridArea: '1/1',
               // You can set a maximum height for the image, if you wish.
               height: height,
-              width: "100%",
+              width: '100%',
             }}
             // You can optionally force an aspect ratio for the generated image
             aspectratio={3 / 1}
             // This is a presentational image, so the alt should be an empty string
             alt=""
-            formats={["auto", "webp", "avif"]}
+            formats={['auto', 'webp', 'avif']}
           />
         ) : (
           <GatsbyImage
             image={img}
-            objectFit={"cover"}
+            objectFit={'cover'}
             objectPosition={imgPosition}
             style={{
-              gridArea: "1/1",
+              gridArea: '1/1',
               // You can set a maximum height for the image, if you wish.
               maxHeight: height,
               // filter: "brightness(60%)",
@@ -58,18 +58,18 @@ export default function FullWidthImage(props) {
             aspectratio={3 / 1}
             // This is a presentational image, so the alt should be an empty string
             alt=""
-            formats={["auto", "webp", "avif"]}
+            formats={['auto', 'webp', 'avif']}
           />
         )}
         {(title || subheading) && (
           <div
             style={{
               // By using the same grid area for both, they are stacked on top of each other
-              gridArea: "1/1",
-              position: "relative",
+              gridArea: '1/1',
+              position: 'relative',
               // This centers the other elements inside the hero component
-              placeItems: "center",
-              display: "grid",
+              placeItems: 'center',
+              display: 'grid',
             }}
           >
             {/* Any content here will be centered in the component */}
@@ -78,12 +78,12 @@ export default function FullWidthImage(props) {
                 className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
                 style={{
                   // boxShadow:
-                    // "#5c8d89 0.5rem 0px 0px, #5c8d89 -0.5rem 0px 0px",
+                  // "#5c8d89 0.5rem 0px 0px, #5c8d89 -0.5rem 0px 0px",
                   // backgroundColor: "#5c8d89",
                   // backgroundColor: "#5c8d89",
-                  color: "white",
-                  lineHeight: "1",
-                  padding: "0.25em",
+                  color: 'white',
+                  lineHeight: '1',
+                  padding: '0.25em',
                 }}
               >
                 {title}
@@ -96,10 +96,10 @@ export default function FullWidthImage(props) {
                   // boxShadow:
                   //   "#5c8d89 0.5rem 0px 0px, #5c8d89 -0.5rem 0px 0px",
                   // backgroundColor: "#5c8d89",
-                  color: "white",
-                  lineHeight: "1",
-                  padding: "0.25rem",
-                  marginTop: "0.5rem",
+                  color: 'white',
+                  lineHeight: '1',
+                  padding: '0.25rem',
+                  marginTop: '0.5rem',
                 }}
               >
                 {subheading}
@@ -109,7 +109,7 @@ export default function FullWidthImage(props) {
         )}
       </div>
     </React.Fragment>
-  );
+  )
 }
 
 FullWidthImage.propTypes = {
@@ -119,4 +119,4 @@ FullWidthImage.propTypes = {
   subheading: PropTypes.string,
   imgPosition: PropTypes.string,
   brightness: PropTypes.number,
-};
+}
