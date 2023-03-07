@@ -72,7 +72,7 @@ const CertPageTemplate = ({ image, title, subheading }) => {
                     </div>
                   </div>
                   <div className="column is-3">
-                    <Link to="https://drive.google.com/file/d/1iYwSU4SY0Ip8NV9rGG1ZBwi1tNZyBLax/view?usp=sharing">
+                    <Link to="https://drive.google.com/file/d/1z7WoiY5KtbDQWkVn1VuwUK5TUcQLotYm/view?usp=share_link">
                       <StaticImage src={certSyobunImage} height={imageHeight} />
                     </Link>
                   </div>
@@ -80,7 +80,6 @@ const CertPageTemplate = ({ image, title, subheading }) => {
               </div>
               <div className="section">
                 <h2 className="title is-2">産業廃棄物収集運搬業許可</h2>
-                {/* <h3 className="title is-4">保有車両</h3> */}
                 <div className="columns">
                   <div className="column">
                     <div className="content">
@@ -97,7 +96,7 @@ const CertPageTemplate = ({ image, title, subheading }) => {
                     </div>
                   </div>
                   <div className="column is-3">
-                    <Link to="https://drive.google.com/file/d/1dV-kk0EP301FN30DfzDU4CCpsTiVNQAz/view?usp=sharing">
+                    <Link to="https://drive.google.com/file/d/1ZRW6TH5DsbxPi1yVUzjGOwezj27vLGYe/view?usp=share_link">
                       <StaticImage src={certSyuunImage} height={imageHeight} />
                     </Link>
                   </div>
@@ -105,7 +104,6 @@ const CertPageTemplate = ({ image, title, subheading }) => {
               </div>
               <div className="section">
                 <h2 className="title is-2">かごしま認定リサイクル製品認定証</h2>
-                {/* <h3 className="title is-4">設備</h3> */}
                 <div className="columns">
                   <div className="column">
                     <div className="content">
@@ -122,9 +120,7 @@ const CertPageTemplate = ({ image, title, subheading }) => {
                     </div>
                   </div>
                   <div className="column is-3">
-                    {/* <Link to="/"> */}
                     <StaticImage src={certResycleImage} height={imageHeight} />
-                    {/* </Link> */}
                   </div>
                 </div>
               </div>
