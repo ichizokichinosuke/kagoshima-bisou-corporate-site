@@ -20,17 +20,11 @@ jobs:
       with:
         node-version: '16.6.2'
 
+    - name: Install dependencies
+      run: npm install
+
     - name: Generate markdown file
-      run: |
-        const fs = require('fs');
-
-        let date = new Date();
-        let timestamp = date.toISOString();
-
-        let data = `# Timestamp\n\nThis file was generated at ${timestamp}.`;
-
-        fs.writeFileSync(`./src/pages/information/generated-${timestamp}.md`, data);
-      shell: node
+      run: node ./src/libs/generateInformationMarkdown.js
 
     - name: Commit and push if changed
       run: |
