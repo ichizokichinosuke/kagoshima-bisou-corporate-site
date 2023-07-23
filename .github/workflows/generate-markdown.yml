@@ -1,0 +1,41 @@
+name: Generate Markdown File
+
+on:
+  schedule:
+    - cron: '* * * * *'  # This will run the workflow every day at 00:00.
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      with:
+        ref:
+            main
+
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16.6.2'
+
+    - name: Generate markdown file
+      run: |
+        const fs = require('fs');
+
+        let date = new Date();
+        let timestamp = date.toISOString();
+
+        let data = `# Timestamp\n\nThis file was generated at ${timestamp}.`;
+
+        fs.writeFileSync(`./src/pages/information/generated-${timestamp}.md`, data);
+      shell: node
+
+    - name: Commit and push if changed
+      run: |
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git config --global user.name "github-actions[bot]"
+        git add -A
+        git diff --quiet && git diff --staged --quiet || git commit -m "Add generated markdown file"
+        git push
