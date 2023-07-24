@@ -1,27 +1,16 @@
 const fs = require('fs')
-const holiday_jp = require('@holiday_jp/holiday_jp')
+const holiday_jp = require('@holiday-jp/holiday_jp')
 
 const nowDate = new Date()
+const nowYear = nowDate.getFullYear()
 const nowMonth = nowDate.getMonth() + 1
 const nextMonth = nowMonth == 12 ? 1 : nowMonth + 1
-const nextNextMonth = nowMonth + 2
-const nextNextMonthYear = nowMonth >= 11 ? nowDate.getFullYear() + 1 : nowDate.getFullYear()
-
-// const nextNextMonthBeginDate = new Date(nowDate.getFullYear(), nextMonth, 1)
 
 // 月のインデックスは0-11
-const nextMonthBeginDate = new Date(nowDate.getFullYear(), nextMonth - 1, 1)
+const nextMonthBeginDate = new Date(nowYear, nextMonth - 1, 1)
 
 // アンダーフローにより桁借りされる
-const nextMonthLastDate = new Date(nowDate.getFullYear(), nextMonth, 0)
-
-console.log(nowDate)
-
-// console.log(nextNextMonthBeginDate)
-
-console.log(nextMonthBeginDate)
-
-console.log(nextMonthLastDate)
+const nextMonthLastDate = new Date(nowYear, nextMonth, 0)
 
 const dayOfWeekBeginDate = nextMonthBeginDate.getDay()
 const beginNearSundayDate =
@@ -35,16 +24,32 @@ const lastNearSundayDate =
     ? nextMonthLastDate.getDate()
     : nextMonthLastDate.getDate() - dayOfWeekLastDate
 
-let sundayList = []
+let sundayAndHolidayObj = []
 for (let d = beginNearSundayDate; d <= lastNearSundayDate; d += 7) {
-  sundayList.push(d)
+  sundayAndHolidayObj.push({
+    date: d,
+    week: '日',
+  })
 }
 
-console.log(sundayList)
+const holidays = holiday_jp.between(nextMonthBeginDate, nextMonthLastDate)
 
-const nextMonthHolidays = holiday_jp.between(nextMonthBeginDate, nextMonthLastDate)
+holidays.forEach((holiday) => {
+  sundayAndHolidayObj.push({
+    date: holiday.date.getDate(),
+    week: holiday.week,
+  })
+})
 
-console.log(nextMonthHolidays)
+sundayAndHolidayObj.sort((a, b) => a.date - b.date)
+
+let displayString = ''
+
+sundayAndHolidayObj.forEach((element) => {
+  displayString += `<span style="color: red;">${nextMonth}/${element.date}（${element.week}）</span>\n\n`
+})
+
+// console.log(displayString)
 
 const timestamp = nowDate.toISOString()
 
@@ -61,22 +66,10 @@ tags:
 
 ${nextMonth}月の休業日をお知らせします。
 
-<span style="color: red;">8/6（日）</span>
-
-<span style="color: red;">8/11（金）</span>
-
-<span style="color: red;">8/12（土）</span>
-
-<span style="color: red;">8/13（日）</span>
-
-<span style="color: red;">8/14（月）</span>
-
-<span style="color: red;">8/20（日）</span>
-
-<span style="color: red;">8/27（日）</span>
+${displayString}
 
 定休日、夜間等の持ち込みなどございましたらお気軽にご相談、お問い合わせください！
 
 `
 
-// fs.writeFileSync(`./${nowDate}-regular-holiday.md`, mdData)
+fs.writeFileSync(`./${timestamp}-regular-holiday.md`, mdData)
