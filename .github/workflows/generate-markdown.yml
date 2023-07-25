@@ -1,8 +1,9 @@
 name: Generate Markdown File
 
+# 毎月10日の0時0分に実行
 on:
   schedule:
-    - cron: '* * * 6 *'
+    - cron: '0 0 10 * *'
 
 jobs:
   build:
