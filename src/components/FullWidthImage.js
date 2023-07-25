@@ -4,9 +4,7 @@ import { GatsbyImage } from 'gatsby-plugin-image'
 
 export default function FullWidthImage(props) {
   const { height = 400, img, title, subheading, brightness = 40, imgPosition = 'center' } = props
-  // const shadowColor= "#5c8d89";
   const imageBrightness = 'brightness(' + brightness + '%)'
-  console.log(imageBrightness)
 
   return (
     <React.Fragment>

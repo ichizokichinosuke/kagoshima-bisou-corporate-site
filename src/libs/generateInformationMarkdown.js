@@ -1,12 +1,12 @@
 const fs = require('fs')
 const holiday_jp = require('@holiday-jp/holiday_jp')
 
-const nowDate = new Date()
+const nowDate = new Date(2023, 19, 25)
 const nowYear = nowDate.getFullYear()
 const nowMonth = nowDate.getMonth() + 1
-const nextMonth = nowMonth == 12 ? 1 : nowMonth + 1
+const nextMonth = nowMonth + 1
 
-// 月のインデックスは0-11
+// 月のインデックスは[0-11]
 const nextMonthBeginDate = new Date(nowYear, nextMonth - 1, 1)
 
 // アンダーフローにより桁借りされる
@@ -35,27 +35,28 @@ for (let d = beginNearSundayDate; d <= lastNearSundayDate; d += 7) {
 const holidays = holiday_jp.between(nextMonthBeginDate, nextMonthLastDate)
 
 holidays.forEach((holiday) => {
+  const week = holiday.week
+  if (week == '日') return
   sundayAndHolidayObj.push({
     date: holiday.date.getDate(),
-    week: holiday.week,
+    week: week,
   })
 })
 
 sundayAndHolidayObj.sort((a, b) => a.date - b.date)
 
+const displayNextMonth = nextMonthBeginDate.getMonth() + 1
 let displayString = ''
 
 sundayAndHolidayObj.forEach((element) => {
-  displayString += `<span style="color: red;">${nextMonth}/${element.date}（${element.week}）</span>\n\n`
+  displayString += `<span style="color: red;">${displayNextMonth}/${element.date}（${element.week}）</span>\n\n`
 })
-
-// console.log(displayString)
 
 const timestamp = nowDate.toISOString()
 
 const mdData = `---
 templateKey: information-post
-title: ${nextMonth}月休業日のお知らせ
+title: ${displayNextMonth}月休業日のお知らせ
 date: ${timestamp}
 featuredpost: true
 description: >-
@@ -64,7 +65,7 @@ tags:
 - 定休日
 ---
 
-${nextMonth}月の休業日をお知らせします。
+${displayNextMonth}月の休業日をお知らせします。
 
 ${displayString}
 
@@ -72,4 +73,4 @@ ${displayString}
 
 `
 
-fs.writeFileSync(`./${timestamp}-regular-holiday.md`, mdData)
+fs.writeFileSync(`./src/pages/information/regularHoliday-${timestamp}.md`, mdData)
