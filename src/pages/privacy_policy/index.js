@@ -6,9 +6,9 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
-        <section className="section">
-          <div className="container">
-            <div className="content">
+        <section className='section'>
+          <div className='container'>
+            <div className='content'>
               <h1>プライバシーポリシー</h1>
               <h2>個人情報取り扱いについて</h2>
               <p>
@@ -22,9 +22,7 @@ export default class Index extends React.Component {
               <p>
                 個人除法の漏えい、滅失またはき損の防止措置を講ずるとともに、万一の発生時には速やかな是正対策を実施します。
               </p>
-              <p>
-                個人情報の取扱いに関する法令、国が定める指針その他の規範を遵守します。
-              </p>
+              <p>個人情報の取扱いに関する法令、国が定める指針その他の規範を遵守します。</p>
               <p>基本的には以下の目的でのみ個人情報を利用いたします。</p>
               <ul>
                 <li>契約の履行（商品サービスの提供等）</li>

@@ -21,19 +21,19 @@ const CertPageTemplate = ({ image, title, subheading }) => {
   return (
     <div>
       <FullWidthImage img={heroImage} title={title} subheading={subheading} />
-      <section className="section section--gradient">
-        <div className="container">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="section">
-                <h2 className="title is-2">産業廃棄物処分業許可</h2>
+      <section className='section section--gradient'>
+        <div className='container'>
+          <div className='columns'>
+            <div className='column is-10 is-offset-1'>
+              <div className='section'>
+                <h2 className='title is-2'>産業廃棄物処分業許可</h2>
                 <p>
-                  許可詳細は<Link to="./facility_detail">コチラ</Link>。
+                  許可詳細は<Link to='./facility_detail'>コチラ</Link>。
                 </p>
-                <div className="columns">
-                  <div className="column">
-                    <div className="content">
-                      <table className="table is-hoverable is-bordered has-text-lefted">
+                <div className='columns'>
+                  <div className='column'>
+                    <div className='content'>
+                      <table className='table is-hoverable is-bordered has-text-lefted'>
                         <thead>
                           <tr>
                             <th>破砕施設</th>
@@ -55,39 +55,34 @@ const CertPageTemplate = ({ image, title, subheading }) => {
                             <td>4.8t/日</td>
                           </tr>
                           <tr>
-                            <th>
-                              4. がれき類、ガラス、コンクリート、陶磁器くず
-                            </th>
+                            <th>4. がれき類、ガラス、コンクリート、陶磁器くず</th>
                             <td>288t/日</td>
                           </tr>
                           <tr>
-                            <th>
-                              5.
-                              金属（蛍光灯等）、ガラス、コンクリート、陶磁器くず
-                            </th>
+                            <th>5. 金属（蛍光灯等）、ガラス、コンクリート、陶磁器くず</th>
                             <td>3.1t/日</td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
                   </div>
-                  <div className="column is-3">
-                    <Link to="https://drive.google.com/file/d/1z7WoiY5KtbDQWkVn1VuwUK5TUcQLotYm/view?usp=share_link">
+                  <div className='column is-3'>
+                    <Link to='https://drive.google.com/file/d/1z7WoiY5KtbDQWkVn1VuwUK5TUcQLotYm/view?usp=share_link'>
                       <StaticImage src={certSyobunImage} height={imageHeight} />
                     </Link>
                   </div>
                 </div>
               </div>
-              <div className="section">
-                <h2 className="title is-2">産業廃棄物収集運搬業許可</h2>
-                <div className="columns">
-                  <div className="column">
-                    <div className="content">
+              <div className='section'>
+                <h2 className='title is-2'>産業廃棄物収集運搬業許可</h2>
+                <div className='columns'>
+                  <div className='column'>
+                    <div className='content'>
                       <StaticImage
                         src={vehicleImage}
                         aspectRatio={3 / 2}
                         objectPosition={'center'}
-                        layout="fullWidth"
+                        layout='fullWidth'
                         style={{
                           gridArea: '1/1',
                           maxHeight: 400,
@@ -95,23 +90,23 @@ const CertPageTemplate = ({ image, title, subheading }) => {
                       />
                     </div>
                   </div>
-                  <div className="column is-3">
-                    <Link to="https://drive.google.com/file/d/1ZRW6TH5DsbxPi1yVUzjGOwezj27vLGYe/view?usp=share_link">
+                  <div className='column is-3'>
+                    <Link to='https://drive.google.com/file/d/1ZRW6TH5DsbxPi1yVUzjGOwezj27vLGYe/view?usp=share_link'>
                       <StaticImage src={certSyuunImage} height={imageHeight} />
                     </Link>
                   </div>
                 </div>
               </div>
-              <div className="section">
-                <h2 className="title is-2">かごしま認定リサイクル製品認定証</h2>
-                <div className="columns">
-                  <div className="column">
-                    <div className="content">
+              <div className='section'>
+                <h2 className='title is-2'>かごしま認定リサイクル製品認定証</h2>
+                <div className='columns'>
+                  <div className='column'>
+                    <div className='content'>
                       <StaticImage
                         src={processBLocksImage}
                         aspectRatio={3 / 2}
                         objectPosition={'center'}
-                        layout="fullWidth"
+                        layout='fullWidth'
                         style={{
                           gridArea: '1/1',
                           maxHeight: 400,
@@ -119,17 +114,15 @@ const CertPageTemplate = ({ image, title, subheading }) => {
                       />
                     </div>
                   </div>
-                  <div className="column is-3">
+                  <div className='column is-3'>
                     <StaticImage src={certResycleImage} height={imageHeight} />
                   </div>
                 </div>
               </div>
-              <div className="section">
-                <h2 className="title is-2">
-                  電子マニフェスト（JW NET、RVSTA）
-                </h2>
-                <h2 className="title is-3">産業廃棄物処分業</h2>
-                <table className="table is-hoverable is-bordered has-text-centered">
+              <div className='section'>
+                <h2 className='title is-2'>電子マニフェスト（JW NET、RVSTA）</h2>
+                <h2 className='title is-3'>産業廃棄物処分業</h2>
+                <table className='table is-hoverable is-bordered has-text-centered'>
                   <tbody>
                     <tr>
                       <th>加入者番号</th>
@@ -141,8 +134,8 @@ const CertPageTemplate = ({ image, title, subheading }) => {
                     </tr>
                   </tbody>
                 </table>
-                <h2 className="title is-3">産業廃棄物収集運搬業</h2>
-                <table className="table is-hoverable is-bordered has-text-centered">
+                <h2 className='title is-3'>産業廃棄物収集運搬業</h2>
+                <table className='table is-hoverable is-bordered has-text-centered'>
                   <tbody>
                     <tr>
                       <th>加入者番号</th>

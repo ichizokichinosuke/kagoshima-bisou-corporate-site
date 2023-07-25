@@ -18,14 +18,14 @@ export const IndexPageTemplate = ({
   return (
     <div>
       <FullWidthImage img={heroImage} title={title} subheading={subheading} />
-      <section className="section section--gradient">
-        <div className="container">
-          <div className="section">
-            <div className="columns">
-              <div className="column is-10 is-offset-1">
-                <div className="content">
-                  <div className="content">
-                    <h2 className="title is-2">ごあいさつ</h2>
+      <section className='section section--gradient'>
+        <div className='container'>
+          <div className='section'>
+            <div className='columns'>
+              <div className='column is-10 is-offset-1'>
+                <div className='content'>
+                  <div className='content'>
+                    <h2 className='title is-2'>ごあいさつ</h2>
                     <p>
                       <strong>私たちは、廃棄物を取り扱う会社です。</strong>
                     </p>
@@ -42,13 +42,11 @@ export const IndexPageTemplate = ({
                       これの実現に向け、私たち鹿児島美掃はスタッフ一同、真正面から事業に取り組んでまいります。
                     </p>
                   </div>
-                  <div className="column is-12">
-                    <h2 className="has-text-weight-semibold is-size-2">
-                      新着情報
-                    </h2>
+                  <div className='column is-12'>
+                    <h2 className='has-text-weight-semibold is-size-2'>新着情報</h2>
                     <BlogRoll />
-                    <div className="column is-12 has-text-centered">
-                      <Link className="btn" to="/information">
+                    <div className='column is-12 has-text-centered'>
+                      <Link className='btn' to='/information'>
                         一覧
                       </Link>
                     </div>

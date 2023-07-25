@@ -16,8 +16,7 @@ export const BusinessPageTemplate = ({
   pricing,
 }) => {
   const heroImage = getImage(image) || image
-  const fwiInterimProcess =
-    getImage(fullImageInterimProcess) || fullImageInterimProcess
+  const fwiInterimProcess = getImage(fullImageInterimProcess) || fullImageInterimProcess
 
   const concreteStoreImage = '../img/concrete-store.jpg'
   const plasticStoreImage = '../img/plastic-store.jpg'
@@ -37,104 +36,81 @@ export const BusinessPageTemplate = ({
   return (
     <div>
       <FullWidthImage img={heroImage} title={title} subheading={subheading} />
-      <div className="content">
-        <section className="section section--gradient">
-          <div className="container">
-            <div className="section">
-              <div className="columns">
-                <div className="column is-10 is-offset-1">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    {heading}
-                  </h3>
-                  <p className="is-size-5">{description}</p>
+      <div className='content'>
+        <section className='section section--gradient'>
+          <div className='container'>
+            <div className='section'>
+              <div className='columns'>
+                <div className='column is-10 is-offset-1'>
+                  <h3 className='has-text-weight-semibold is-size-2'>{heading}</h3>
+                  <p className='is-size-5'>{description}</p>
                 </div>
               </div>
-              <div className="content has-text-centered">
-                <Link to="/certification/facility_detail">
-                  <h3 className="is-3">砕石プラント</h3>
+              <div className='content has-text-centered'>
+                <Link to='/certification/facility_detail'>
+                  <h3 className='is-3'>砕石プラント</h3>
                   <FullWidthImage img={fwiInterimProcess} brightness={100} />
                 </Link>
               </div>
-              <div className="section">
-                <div className="columns has-text-centered">
-                  <div className="column">
+              <div className='section'>
+                <div className='columns has-text-centered'>
+                  <div className='column'>
                     <h3>破砕施設（前）</h3>
-                    <StaticImage
-                      src={breakMachineImage2}
-                      height={IMAGE_HEIGHT}
-                    />
+                    <StaticImage src={breakMachineImage2} height={IMAGE_HEIGHT} />
                   </div>
-                  <div className="column">
+                  <div className='column'>
                     <h3>破砕施設（横）</h3>
-                    <StaticImage
-                      src={breakMachineImage1}
-                      height={IMAGE_HEIGHT}
-                    />
+                    <StaticImage src={breakMachineImage1} height={IMAGE_HEIGHT} />
                   </div>
                 </div>
               </div>
-              <div className="section">
-                <div className="columns has-text-centered is-vcentered mb-0 pb-0">
-                  <div className="column">
-                    <h3 className="is-3">コンクリート殻保管場所</h3>
+              <div className='section'>
+                <div className='columns has-text-centered is-vcentered mb-0 pb-0'>
+                  <div className='column'>
+                    <h3 className='is-3'>コンクリート殻保管場所</h3>
                   </div>
-                  <div className="column">
-                    <h3 className="is-3">
+                  <div className='column'>
+                    <h3 className='is-3'>
                       廃プラ・がれき等
                       <br />
                       分別ピット
                     </h3>
                   </div>
-                  <div className="column">
-                    <div className="content">
-                      <h3 className="is-3">廃石膏ボード保管場所</h3>
+                  <div className='column'>
+                    <div className='content'>
+                      <h3 className='is-3'>廃石膏ボード保管場所</h3>
                     </div>
                   </div>
                 </div>
-                <div className="columns mt-0 pt-0">
-                  <div className="column">
-                    <StaticImage
-                      src={concreteStoreImage}
-                      height={IMAGE_HEIGHT}
-                    />
+                <div className='columns mt-0 pt-0'>
+                  <div className='column'>
+                    <StaticImage src={concreteStoreImage} height={IMAGE_HEIGHT} />
                   </div>
-                  <div className="column">
-                    <StaticImage
-                      src={plasticStoreImage}
-                      height={IMAGE_HEIGHT}
-                    />
+                  <div className='column'>
+                    <StaticImage src={plasticStoreImage} height={IMAGE_HEIGHT} />
                   </div>
-                  <div className="column">
+                  <div className='column'>
                     <StaticImage src={gypsumStoreImage} height={IMAGE_HEIGHT} />
                   </div>
                 </div>
               </div>
-              <div className="section">
-                <div className="columns has-text-centered">
-                  <div className="column">
+              <div className='section'>
+                <div className='columns has-text-centered'>
+                  <div className='column'>
                     <h3>4tアームロールコンテナ</h3>
-                    <StaticImage
-                      src={whiteContainerImage}
-                      height={IMAGE_HEIGHT}
-                    />
+                    <StaticImage src={whiteContainerImage} height={IMAGE_HEIGHT} />
                   </div>
-                  <div className="column">
+                  <div className='column'>
                     <h3>コンテナ</h3>
-                    <StaticImage
-                      src={redContainerImage}
-                      height={IMAGE_HEIGHT}
-                    />
+                    <StaticImage src={redContainerImage} height={IMAGE_HEIGHT} />
                   </div>
                 </div>
-                <div className="columns has-text-centered">
-                  <div className="column">
+                <div className='columns has-text-centered'>
+                  <div className='column'>
                     <h3>バックホウ</h3>
-                    <StaticImage
-                      src={excavatorCarsImage}
-                      height={IMAGE_HEIGHT}
-                    />
+                    <StaticImage src={excavatorCarsImage} height={IMAGE_HEIGHT} />
                   </div>
-                  <div className="column">
+                  <div className='column'>
                     <h3>タイヤショベル, フォークリフト</h3>
                     <StaticImage src={bulldozersImage} height={IMAGE_HEIGHT} />
                   </div>
@@ -143,30 +119,28 @@ export const BusinessPageTemplate = ({
             </div>
           </div>
         </section>
-        <section className="section section--gradient pt-0">
-          <div className="container">
-            <div className="columns">
-              <div className="column is-10 is-offset-1">
-                <h3 className="has-text-weight-semibold is-size-2">
-                  {pricing.heading}
-                </h3>
-                <p className="is-size-5">{pricing.description}</p>
-                <p className="is-size-5">
-                  各車両詳細は<Link to="./vehicle_detail">コチラ</Link>。
+        <section className='section section--gradient pt-0'>
+          <div className='container'>
+            <div className='columns'>
+              <div className='column is-10 is-offset-1'>
+                <h3 className='has-text-weight-semibold is-size-2'>{pricing.heading}</h3>
+                <p className='is-size-5'>{pricing.description}</p>
+                <p className='is-size-5'>
+                  各車両詳細は<Link to='./vehicle_detail'>コチラ</Link>。
                 </p>
               </div>
             </div>
-            <div className="columns has-text-centered">
-              <div className="column">
+            <div className='columns has-text-centered'>
+              <div className='column'>
                 <h3>収集運搬車両</h3>
                 <StaticImage src={vehicleImage} height={IMAGE_HEIGHT} />
               </div>
-              <div className="column">
+              <div className='column'>
                 <h3>塵芥車</h3>
                 <StaticImage src={blueCarImage} height={IMAGE_HEIGHT} />
               </div>
             </div>
-            <div className="content has-text-centered">
+            <div className='content has-text-centered'>
               <h3>バキューム車</h3>
               <StaticImage src={vacuumCarImage} height={IMAGE_HEIGHT} />
             </div>
@@ -182,10 +156,7 @@ BusinessPageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   description: PropTypes.string,
-  fullImageInterimProcess: PropTypes.oneOfType([
-    PropTypes.object,
-    PropTypes.string,
-  ]),
+  fullImageInterimProcess: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   fullImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   pricing: PropTypes.shape({
     heading: PropTypes.string,

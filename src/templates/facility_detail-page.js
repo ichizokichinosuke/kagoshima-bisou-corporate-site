@@ -9,14 +9,14 @@ const FacilityDetailTemplate = ({ image, title, subheading }) => {
   return (
     <div>
       <FullWidthImage img={heroImage} title={title} subheading={subheading} />
-      <section className="section section--gradient">
-        <div className="container">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="section">
-                <h2 className="title is-2">破砕施設</h2>
-                <div className="content">
-                  <table className="table is-hoverable is-bordered has-text-lefted">
+      <section className='section section--gradient'>
+        <div className='container'>
+          <div className='columns'>
+            <div className='column is-10 is-offset-1'>
+              <div className='section'>
+                <h2 className='title is-2'>破砕施設</h2>
+                <div className='content'>
+                  <table className='table is-hoverable is-bordered has-text-lefted'>
                     <thead>
                       <tr>
                         <th>処理可能ごみ</th>
@@ -42,9 +42,7 @@ const FacilityDetailTemplate = ({ image, title, subheading }) => {
                         <td>288t/日</td>
                       </tr>
                       <tr>
-                        <th>
-                          5. 金属（蛍光灯等）、ガラス、コンクリート、陶磁器くず
-                        </th>
+                        <th>5. 金属（蛍光灯等）、ガラス、コンクリート、陶磁器くず</th>
                         <td>3.1t/日</td>
                       </tr>
                       <tr>
@@ -54,9 +52,9 @@ const FacilityDetailTemplate = ({ image, title, subheading }) => {
                     </tbody>
                   </table>
                 </div>
-                <h2 className="title is-2">圧縮施設</h2>
-                <div className="content">
-                  <table className="table is-hoverable is-bordered has-text-lefted">
+                <h2 className='title is-2'>圧縮施設</h2>
+                <div className='content'>
+                  <table className='table is-hoverable is-bordered has-text-lefted'>
                     <thead>
                       <tr>
                         <th>処理可能ごみ</th>
@@ -83,9 +81,9 @@ const FacilityDetailTemplate = ({ image, title, subheading }) => {
                     </tbody>
                   </table>
                 </div>
-                <h2 className="title is-2">選別施設</h2>
-                <div className="content">
-                  <table className="table is-hoverable is-bordered has-text-lefted">
+                <h2 className='title is-2'>選別施設</h2>
+                <div className='content'>
+                  <table className='table is-hoverable is-bordered has-text-lefted'>
                     <thead>
                       <tr>
                         <th>処理可能ごみ</th>
@@ -94,17 +92,15 @@ const FacilityDetailTemplate = ({ image, title, subheading }) => {
                     </thead>
                     <tbody>
                       <tr>
-                        <th>
-                          ガラス、コンクリート、陶磁器、がれき類、金属、ゴムくず
-                        </th>
+                        <th>ガラス、コンクリート、陶磁器、がれき類、金属、ゴムくず</th>
                         <td>222t/日</td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
-                <h2 className="title is-2">焼却施設</h2>
-                <div className="content">
-                  <table className="table is-hoverable is-bordered has-text-lefted">
+                <h2 className='title is-2'>焼却施設</h2>
+                <div className='content'>
+                  <table className='table is-hoverable is-bordered has-text-lefted'>
                     <thead>
                       <tr>
                         <th>処理可能ごみ</th>

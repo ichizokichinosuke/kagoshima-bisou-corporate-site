@@ -16,22 +16,22 @@ const RecruitPageTemplate = ({ image, title, subheading }) => {
   return (
     <div>
       <FullWidthImage img={heroImage} title={title} subheading={subheading} />
-      <section className="section section--gradient">
-        <div className="container">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="section">
-                <div className="content">
+      <section className='section section--gradient'>
+        <div className='container'>
+          <div className='columns'>
+            <div className='column is-10 is-offset-1'>
+              <div className='section'>
+                <div className='content'>
                   <blockquote>
                     <h4>事業拡張のため、共に働く仲間を随時募集しています!</h4>
                     <h4>持続可能な社会づくりに一緒に取り組みましょう!</h4>
                   </blockquote>
                 </div>
-                <h2 className="title is-2">解体・土木作業員、一般事務</h2>
-                <div className="columns">
-                  <div className="column">
-                    <div className="content">
-                      <table className="table is-hoverable is-striped has-text-lefted">
+                <h2 className='title is-2'>解体・土木作業員、一般事務</h2>
+                <div className='columns'>
+                  <div className='column'>
+                    <div className='content'>
+                      <table className='table is-hoverable is-striped has-text-lefted'>
                         <tbody>
                           <tr>
                             <th>募集職種</th>
@@ -63,9 +63,7 @@ const RecruitPageTemplate = ({ image, title, subheading }) => {
                           </tr>
                           <tr>
                             <th>休日</th>
-                            <td>
-                              日曜、当社の定める日(年間休日カレンダーによる)
-                            </td>
+                            <td>日曜、当社の定める日(年間休日カレンダーによる)</td>
                           </tr>
                           <tr>
                             <th>勤務時間</th>
@@ -107,8 +105,7 @@ const RecruitPageTemplate = ({ image, title, subheading }) => {
                             <th>選考方法</th>
                             <td>
                               面接
-                              <br />・
-                              <Link to="/contact">お問い合わせフォーム</Link>
+                              <br />・<Link to='/contact'>お問い合わせフォーム</Link>
                               またはお電話(099-204-9893)でご連絡ください。
                             </td>
                           </tr>

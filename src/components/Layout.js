@@ -11,13 +11,10 @@ const TemplateWrapper = ({ children }) => {
   return (
     <div>
       <Helmet>
-        <html lang="ja" class="has-navbar-fixed-top" />
+        <html lang='ja' class='has-navbar-fixed-top' />
         <title>{title}</title>
-        <meta name="description" content={description} />
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-1DY1W002VW"
-        ></script>
+        <meta name='description' content={description} />
+        <script async src='https://www.googletagmanager.com/gtag/js?id=G-1DY1W002VW'></script>
         <script>{`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
@@ -27,41 +24,38 @@ const TemplateWrapper = ({ children }) => {
       `}</script>
 
         <link
-          rel="apple-touch-icon"
-          sizes="180x180"
+          rel='apple-touch-icon'
+          sizes='180x180'
           href={`${withPrefix('/')}img/apple-touch-icon.png`}
         />
         <link
-          rel="icon"
-          type="image/png"
+          rel='icon'
+          type='image/png'
           href={`${withPrefix('/')}img/favicon-32x32.png`}
-          sizes="32x32"
+          sizes='32x32'
         />
         <link
-          rel="icon"
-          type="image/png"
+          rel='icon'
+          type='image/png'
           href={`${withPrefix('/')}img/favicon-16x16.png`}
-          sizes="16x16"
+          sizes='16x16'
         />
 
         <link
-          rel="mask-icon"
+          rel='mask-icon'
           href={`${withPrefix('/')}img/safari-pinned-tab.svg`}
-          color="#ff4400"
+          color='#ff4400'
         />
 
-        <link
-          href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-          rel="stylesheet"
-        />
+        <link href='https://use.fontawesome.com/releases/v5.6.1/css/all.css' rel='stylesheet' />
 
-        <meta name="theme-color" content="#fff" />
+        <meta name='theme-color' content='#fff' />
 
-        <meta property="og:type" content="business.business" />
-        <meta property="og:title" content={title} />
-        <meta property="og:url" content="/" />
+        <meta property='og:type' content='business.business' />
+        <meta property='og:title' content={title} />
+        <meta property='og:url' content='/' />
         <meta
-          property="og:image"
+          property='og:image'
           // content={`${withPrefix("/")}img/og-image.png`}
           content={`${withPrefix('/')}img/logo-1230x629.png`}
         />
