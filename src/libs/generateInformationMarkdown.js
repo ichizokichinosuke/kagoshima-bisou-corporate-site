@@ -1,7 +1,7 @@
 const fs = require('fs')
 const holiday_jp = require('@holiday-jp/holiday_jp')
 
-const nowDate = new Date(2023, 11, 25)
+const nowDate = new Date(2023, 19, 25)
 const nowYear = nowDate.getFullYear()
 const nowMonth = nowDate.getMonth() + 1
 const nextMonth = nowMonth + 1
@@ -34,11 +34,6 @@ for (let d = beginNearSundayDate; d <= lastNearSundayDate; d += 7) {
 
 const holidays = holiday_jp.between(nextMonthBeginDate, nextMonthLastDate)
 
-console.log(nowDate)
-console.log(nextMonthBeginDate)
-console.log(nextMonthLastDate)
-
-console.log(sundayAndHolidayObj)
 holidays.forEach((holiday) => {
   const week = holiday.week
   if (week == '日') return
@@ -58,7 +53,6 @@ sundayAndHolidayObj.forEach((element) => {
 })
 
 const timestamp = nowDate.toISOString()
-console.log(timestamp)
 
 const mdData = `---
 templateKey: information-post
@@ -79,4 +73,4 @@ ${displayString}
 
 `
 
-fs.writeFileSync(`./src/pages/information/${timestamp}-regular-holiday.md`, mdData)
+fs.writeFileSync(`./src/pages/information/regularHoliday-${timestamp}.md`, mdData)

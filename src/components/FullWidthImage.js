@@ -3,22 +3,13 @@ import PropTypes from 'prop-types'
 import { GatsbyImage } from 'gatsby-plugin-image'
 
 export default function FullWidthImage(props) {
-  const {
-    height = 400,
-    img,
-    title,
-    subheading,
-    brightness = 40,
-    imgPosition = 'center',
-  } = props
-  // const shadowColor= "#5c8d89";
+  const { height = 400, img, title, subheading, brightness = 40, imgPosition = 'center' } = props
   const imageBrightness = 'brightness(' + brightness + '%)'
-  console.log(imageBrightness)
 
   return (
     <React.Fragment>
       <div
-        className="margin-top-0"
+        className='margin-top-0'
         style={{
           display: 'grid',
           alignItems: 'center',
@@ -38,7 +29,7 @@ export default function FullWidthImage(props) {
             // You can optionally force an aspect ratio for the generated image
             aspectratio={3 / 1}
             // This is a presentational image, so the alt should be an empty string
-            alt=""
+            alt=''
             formats={['auto', 'webp', 'avif']}
           />
         ) : (
@@ -53,11 +44,11 @@ export default function FullWidthImage(props) {
               // filter: "brightness(60%)",
               filter: imageBrightness,
             }}
-            layout="fullWidth"
+            layout='fullWidth'
             // You can optionally force an aspect ratio for the generated image
             aspectratio={3 / 1}
             // This is a presentational image, so the alt should be an empty string
-            alt=""
+            alt=''
             formats={['auto', 'webp', 'avif']}
           />
         )}
@@ -75,7 +66,7 @@ export default function FullWidthImage(props) {
             {/* Any content here will be centered in the component */}
             {title && (
               <h1
-                className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+                className='has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen'
                 style={{
                   // boxShadow:
                   // "#5c8d89 0.5rem 0px 0px, #5c8d89 -0.5rem 0px 0px",
@@ -91,7 +82,7 @@ export default function FullWidthImage(props) {
             )}
             {subheading && (
               <h3
-                className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+                className='has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen'
                 style={{
                   // boxShadow:
                   //   "#5c8d89 0.5rem 0px 0px, #5c8d89 -0.5rem 0px 0px",
