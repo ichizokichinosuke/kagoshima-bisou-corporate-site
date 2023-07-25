@@ -4,17 +4,9 @@ import { getImage, StaticImage } from 'gatsby-plugin-image'
 import FullWidthImage from '../components/FullWidthImage'
 import { graphql } from 'gatsby'
 
-const VehicleTable = ({
-  capacity,
-  maxLoad,
-  totalHeavy,
-  length,
-  width,
-  height,
-  displacement,
-}) => {
+const VehicleTable = ({ capacity, maxLoad, totalHeavy, length, width, height, displacement }) => {
   return (
-    <table className="table is-hoverable has-text-lefted is-striped">
+    <table className='table is-hoverable has-text-lefted is-striped'>
       <tbody>
         <tr>
           <th>乗車定員</th>
@@ -61,110 +53,110 @@ const VehicleDetailTemplate = ({ image, title, subheading }) => {
   return (
     <div>
       <FullWidthImage img={heroImage} title={title} subheading={subheading} />
-      <section className="section section--gradient">
-        <div className="container">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="section">
-                <div className="content">
-                  <h3 className="title is-3">日野 10tダンプ</h3>
-                  <div className="columns">
-                    <div className="column is-narrow">
+      <section className='section section--gradient'>
+        <div className='container'>
+          <div className='columns'>
+            <div className='column is-10 is-offset-1'>
+              <div className='section'>
+                <div className='content'>
+                  <h3 className='title is-3'>日野 10tダンプ</h3>
+                  <div className='columns'>
+                    <div className='column is-narrow'>
                       <StaticImage src={hino10tDump} height={imageHeight} />
                     </div>
-                    <div className="column">
+                    <div className='column'>
                       <VehicleTable
-                        capacity="2"
-                        maxLoad="8800"
-                        totalHeavy="19920"
-                        length="770"
-                        width="290"
-                        height="376"
-                        displacement="8.86"
+                        capacity='2'
+                        maxLoad='8800'
+                        totalHeavy='19920'
+                        length='770'
+                        width='290'
+                        height='376'
+                        displacement='8.86'
                       />
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="section">
-                <div className="content">
-                  <h3 className="title is-3">日野 4tユニック</h3>
-                  <div className="columns">
-                    <div className="column is-narrow">
+              <div className='section'>
+                <div className='content'>
+                  <h3 className='title is-3'>日野 4tユニック</h3>
+                  <div className='columns'>
+                    <div className='column is-narrow'>
                       <StaticImage src={hino4tUnic} height={imageHeight} />
                     </div>
-                    <div className="column">
+                    <div className='column'>
                       <VehicleTable
-                        capacity="2"
-                        maxLoad="1650"
-                        totalHeavy="7960"
-                        length="844"
-                        width="232"
-                        height="304"
-                        displacement="5.12"
+                        capacity='2'
+                        maxLoad='1650'
+                        totalHeavy='7960'
+                        length='844'
+                        width='232'
+                        height='304'
+                        displacement='5.12'
                       />
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="section">
-                <div className="content">
-                  <h3 className="title is-3">ふそう 2t平ボディ</h3>
-                  <div className="columns">
-                    <div className="column is-narrow">
+              <div className='section'>
+                <div className='content'>
+                  <h3 className='title is-3'>ふそう 2t平ボディ</h3>
+                  <div className='columns'>
+                    <div className='column is-narrow'>
                       <StaticImage src={huso2tBody} height={imageHeight} />
                     </div>
-                    <div className="column">
+                    <div className='column'>
                       <VehicleTable
-                        capacity="3"
-                        maxLoad="2000"
-                        totalHeavy="4605"
-                        length="469"
-                        width="169"
-                        height="195"
-                        displacement="4.89"
+                        capacity='3'
+                        maxLoad='2000'
+                        totalHeavy='4605'
+                        length='469'
+                        width='169'
+                        height='195'
+                        displacement='4.89'
                       />
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="section">
-                <div className="content">
-                  <h3 className="title is-3">いすゞ 4t塵芥車</h3>
-                  <div className="columns">
-                    <div className="column is-narrow">
+              <div className='section'>
+                <div className='content'>
+                  <h3 className='title is-3'>いすゞ 4t塵芥車</h3>
+                  <div className='columns'>
+                    <div className='column is-narrow'>
                       <StaticImage src={isuzu4tPacker} height={imageHeight} />
                     </div>
-                    <div className="column">
+                    <div className='column'>
                       <VehicleTable
-                        capacity="3"
-                        maxLoad="3050"
-                        totalHeavy="7725"
-                        length="579"
-                        width="209"
-                        height="227"
-                        displacement="5.19"
+                        capacity='3'
+                        maxLoad='3050'
+                        totalHeavy='7725'
+                        length='579'
+                        width='209'
+                        height='227'
+                        displacement='5.19'
                       />
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="section">
-                <div className="content">
-                  <h3 className="title is-3">日野 4tアームロール</h3>
-                  <div className="columns">
-                    <div className="column is-narrow">
+              <div className='section'>
+                <div className='content'>
+                  <h3 className='title is-3'>日野 4tアームロール</h3>
+                  <div className='columns'>
+                    <div className='column is-narrow'>
                       <StaticImage src={hino4tArm} height={imageHeight} />
                     </div>
-                    <div className="column">
+                    <div className='column'>
                       <VehicleTable
-                        capacity="2"
-                        maxLoad="3500"
-                        totalHeavy="7960"
-                        length="620"
-                        width="219"
-                        height="240"
-                        displacement="5.12"
+                        capacity='2'
+                        maxLoad='3500'
+                        totalHeavy='7960'
+                        length='620'
+                        width='219'
+                        height='240'
+                        displacement='5.12'
                       />
                     </div>
                   </div>

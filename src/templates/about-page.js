@@ -22,16 +22,16 @@ export const AboutPageTemplate = ({
   return (
     <div>
       <FullWidthImage img={heroImage} title={title} subheading={subheading} />
-      <section className="section section--gradient">
-        <div className="container">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="section">
-                <h2 className="title is-2">会社概要</h2>
-                <div className="columns">
-                  <div className="column">
-                    <div className="content">
-                      <table className="table is-hoverable has-text-lefted is-striped">
+      <section className='section section--gradient'>
+        <div className='container'>
+          <div className='columns'>
+            <div className='column is-10 is-offset-1'>
+              <div className='section'>
+                <h2 className='title is-2'>会社概要</h2>
+                <div className='columns'>
+                  <div className='column'>
+                    <div className='content'>
+                      <table className='table is-hoverable has-text-lefted is-striped'>
                         <tbody>
                           <tr>
                             <th>会社名</th>
@@ -72,17 +72,13 @@ export const AboutPageTemplate = ({
                           <tr>
                             <th rowSpan={5}>主な事業内容</th>
                             <td>
-                              <span style={{ margin: '0 6em 0 0 ' }}>
-                                産業廃棄物処分業
-                              </span>
+                              <span style={{ margin: '0 6em 0 0 ' }}>産業廃棄物処分業</span>
                               鹿児島市 第08224168330号
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <span style={{ margin: '0 4em 0 0 ' }}>
-                                産業廃棄物収集運搬業
-                              </span>
+                              <span style={{ margin: '0 4em 0 0 ' }}>産業廃棄物収集運搬業</span>
                               鹿児島県 第04609168330号
                               <br />
                               <span style={{ margin: '0 14em 0 0 ' }}></span>
@@ -94,17 +90,13 @@ export const AboutPageTemplate = ({
                           </tr>
                           <tr>
                             <td>
-                              <span style={{ margin: '0 2em 0 0 ' }}>
-                                産業廃棄物積替え又は保管
-                              </span>
+                              <span style={{ margin: '0 2em 0 0 ' }}>産業廃棄物積替え又は保管</span>
                               鹿児島市 第08211168330号
                             </td>
                           </tr>
                           <tr>
                             <td>
-                              <span style={{ margin: '0 8em 0 0 ' }}>
-                                再生骨材販売
-                              </span>
+                              <span style={{ margin: '0 8em 0 0 ' }}>再生骨材販売</span>
                               鹿児島県 鹿リ認第30-8号(RC-30)
                               <br />
                               <span style={{ margin: '0 18.28em 0 0 ' }}></span>
@@ -113,9 +105,7 @@ export const AboutPageTemplate = ({
                           </tr>
                           <tr>
                             <td>
-                              <span style={{ margin: '0 4em 0 0 ' }}>
-                                一般貨物自動運送事業
-                              </span>
+                              <span style={{ margin: '0 4em 0 0 ' }}>一般貨物自動運送事業</span>
                               九運貨物 第366号
                             </td>
                           </tr>
@@ -129,14 +119,14 @@ export const AboutPageTemplate = ({
                   </div>
                 </div>
               </div>
-              <div className="section">
-                <div className="content">
+              <div className='section'>
+                <div className='content'>
                   {/* <h2 className="title is-2">関連企業</h2> */}
-                  <h2 className="title is-2">主要取引先</h2>
-                  <h3 className="title is-3">KBパートナーズ株式会社</h3>
-                  <div className="columns">
-                    <div className="column">
-                      <table className="table is-hoverable has-text-lefted is-striped">
+                  <h2 className='title is-2'>主要取引先</h2>
+                  <h3 className='title is-3'>KBパートナーズ株式会社</h3>
+                  <div className='columns'>
+                    <div className='column'>
+                      <table className='table is-hoverable has-text-lefted is-striped'>
                         <tbody>
                           <tr>
                             <th>代表取締役社長</th>
@@ -174,16 +164,16 @@ export const AboutPageTemplate = ({
                         </tbody>
                       </table>
                     </div>
-                    <div className="column is-one-third">
+                    <div className='column is-one-third'>
                       <StaticImage src={kbImage} />
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="section">
-                <div className="content">
-                  <h2 className="title is-2">沿革</h2>
-                  <table className="table is-hoverable has-text-lefted is-striped">
+              <div className='section'>
+                <div className='content'>
+                  <h2 className='title is-2'>沿革</h2>
+                  <table className='table is-hoverable has-text-lefted is-striped'>
                     <tbody>
                       <tr>
                         <th>平成24年5月</th>
@@ -239,9 +229,7 @@ export const AboutPageTemplate = ({
                       </tr>
                       <tr>
                         <th>令和2年5月</th>
-                        <td>
-                          KBパートナーズ（株）設立（土捨て場事業、砕石販売事業）
-                        </td>
+                        <td>KBパートナーズ（株）設立（土捨て場事業、砕石販売事業）</td>
                       </tr>
                       <tr>
                         <th>令和3年3月</th>
@@ -263,20 +251,20 @@ export const AboutPageTemplate = ({
                   </table>
                 </div>
               </div>
-              <div className="section">
-                <h2 className="title is-2">アクセスマップ</h2>
+              <div className='section'>
+                <h2 className='title is-2'>アクセスマップ</h2>
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54369.05701784793!2d130.47149757910157!3d31.604649499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353e5e9ba77af365%3A0xd06b46970b11da10!2z77yI5qCq77yJ6bm_5YWQ5bO2576O5o6D!5e0!3m2!1sja!2sjp!4v1643469837469!5m2!1sja!2sjp"
-                  width="1000"
-                  height="500"
+                  src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54369.05701784793!2d130.47149757910157!3d31.604649499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353e5e9ba77af365%3A0xd06b46970b11da10!2z77yI5qCq77yJ6bm_5YWQ5bO2576O5o6D!5e0!3m2!1sja!2sjp!4v1643469837469!5m2!1sja!2sjp'
+                  width='1000'
+                  height='500'
                   style={{ border: 0 }}
-                  allowfullscreen=""
-                  loading="lazy"
-                  title="Access Map"
+                  allowfullscreen=''
+                  loading='lazy'
+                  title='Access Map'
                 ></iframe>
               </div>
-              <div className="section">
-                <h2 className="title is-2">場内案内</h2>
+              <div className='section'>
+                <h2 className='title is-2'>場内案内</h2>
                 <StaticImage src={wholeImage} />
               </div>
             </div>
