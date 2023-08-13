@@ -1,7 +1,7 @@
 const fs = require('fs')
 const holiday_jp = require('@holiday-jp/holiday_jp')
 
-const nowDate = new Date(2023, 19, 25)
+const nowDate = new Date()
 const nowYear = nowDate.getFullYear()
 const nowMonth = nowDate.getMonth() + 1
 const nextMonth = nowMonth + 1
