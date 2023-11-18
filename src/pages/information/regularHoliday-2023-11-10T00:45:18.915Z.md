@@ -19,6 +19,12 @@ tags:
 
 <span style="color: red;">12/24（日）</span>
 
+<span style="color: red;">12/28（木）</span>
+
+<span style="color: red;">12/29（金）</span>
+
+<span style="color: red;">12/30（土）</span>
+
 <span style="color: red;">12/31（日）</span>
 
 
