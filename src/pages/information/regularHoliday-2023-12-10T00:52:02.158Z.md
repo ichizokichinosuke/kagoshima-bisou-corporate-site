@@ -11,11 +11,11 @@ tags:
 
 <span style="color: red;">1/1（月）</span>
 
-<span style="color: red;">1/2（）</span>
+<span style="color: red;">1/2（火）</span>
 
-<span style="color: red;">1/3（）</span>
+<span style="color: red;">1/3（水）</span>
 
-<span style="color: red;">1/4（）</span>
+<span style="color: red;">1/4（木）</span>
 
 <span style="color: red;">1/7（日）</span>
 
