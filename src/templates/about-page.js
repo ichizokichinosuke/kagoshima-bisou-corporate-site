@@ -39,7 +39,7 @@ export const AboutPageTemplate = ({
                           </tr>
                           <tr>
                             <th>代表取締役社長</th>
-                            <td>小野陽子</td>
+                            <td>小野広子</td>
                           </tr>
                           <tr>
                             <th>所在地</th>
