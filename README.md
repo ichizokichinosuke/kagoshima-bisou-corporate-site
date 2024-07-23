@@ -25,5 +25,6 @@
 ## Prerequisites
 
 - Minimal Node.js version 14.15.0
+- 動作確認済みnodeバージョン v16.6.2
 - [Gatsby CLI](https://www.gatsbyjs.com/docs/reference/gatsby-cli/)
 - [Netlify CLI](https://github.com/netlify/cli)
